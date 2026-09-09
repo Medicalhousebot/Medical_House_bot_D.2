@@ -1,0 +1,2111 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>جزوه جامع روماتولوژی: بیماری بهجت، سندرم شوگرن، بیماری مرتبط با IgG4 و پلی‌کندریت راجعه</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap');
+
+    :root {
+      --primary:      #1a237e;
+      --secondary:    #283593;
+      --accent1:      #0277bd;
+      --accent2:      #00838f;
+      --accent3:      #6a1b9a;
+      --accent4:      #ad1457;
+      --accent5:      #e65100;
+      --bg:           #f4f6fc;
+      --card:         #ffffff;
+      --text:         #1a1a2e;
+      --muted:        #546e7a;
+      --border:       #c5cae9;
+      --green:        #1b5e20;
+      --greenlight:   #e8f5e9;
+      --redlight:     #ffebee;
+      --red:          #b71c1c;
+      --yellowlight:  #fff8e1;
+      --yellow:       #f57f17;
+      --bluelight:    #e3f2fd;
+      --blue:         #0d47a1;
+      --purplelight:  #f3e5f5;
+      --purple:       #4a148c;
+      --teallight:    #e0f7fa;
+      --teal:         #006064;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Vazirmatn', Tahoma, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.9;
+      font-size: 14.5px;
+      padding-bottom: 90px;
+    }
+
+    /* ===== COVER ===== */
+    .cover {
+      background: linear-gradient(135deg, #1a237e 0%, #283593 40%, #0277bd 100%);
+      color: white;
+      text-align: center;
+      padding: 65px 25px 55px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(26,35,126,0.25);
+    }
+    .cover::before {
+      content: '';
+      position: absolute;
+      top: -80px; left: -80px;
+      width: 320px; height: 320px;
+      background: rgba(255,255,255,0.06);
+      border-radius: 50%;
+    }
+    .cover::after {
+      content: '';
+      position: absolute;
+      bottom: -70px; right: -70px;
+      width: 280px; height: 280px;
+      background: rgba(255,255,255,0.06);
+      border-radius: 50%;
+    }
+    .cover .badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.18);
+      border: 1px solid rgba(255,255,255,0.35);
+      border-radius: 50px;
+      padding: 6px 22px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      margin-bottom: 18px;
+    }
+    .cover h1 {
+      font-size: 2.2em;
+      font-weight: 900;
+      margin-bottom: 12px;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.35);
+      line-height: 1.4;
+    }
+    .cover h2 {
+      font-size: 1.25em;
+      font-weight: 400;
+      opacity: 0.95;
+      margin-bottom: 28px;
+    }
+    .cover .meta {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .cover .meta-item {
+      background: rgba(255,255,255,0.14);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 12px;
+      padding: 9px 20px;
+      font-size: 13px;
+    }
+    .cover .meta-item span { display: block; font-weight: 800; font-size: 14.5px; margin-top: 3px; }
+
+    /* ===== TOC ===== */
+    .toc {
+      background: white;
+      margin: 30px auto;
+      max-width: 960px;
+      border-radius: 16px;
+      padding: 28px 32px;
+      box-shadow: 0 4px 20px rgba(26,35,126,0.08);
+      border-right: 6px solid var(--primary);
+    }
+    .toc h3 {
+      font-size: 1.25em;
+      color: var(--primary);
+      margin-bottom: 18px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 800;
+    }
+    .toc ol {
+      padding-right: 22px;
+    }
+    .toc ol li {
+      padding: 6px 0;
+      color: var(--accent1);
+      font-weight: 600;
+      font-size: 14px;
+    }
+    .toc ol li a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .toc ol li a:hover { color: var(--primary); text-decoration: underline; }
+
+    /* ===== MAIN WRAPPER ===== */
+    .main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 15px 40px;
+    }
+
+    /* ===== SECTION HEADER ===== */
+    .section-header {
+      border-radius: 14px;
+      padding: 18px 25px;
+      margin: 45px 0 20px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      color: white;
+      font-size: 1.25em;
+      font-weight: 800;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.14);
+    }
+    .section-header .icon {
+      font-size: 1.4em;
+      background: rgba(255,255,255,0.22);
+      border-radius: 50%;
+      width: 44px; height: 44px;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .sh-blue   { background: linear-gradient(135deg, #1565c0, #0288d1); }
+    .sh-purple { background: linear-gradient(135deg, #6a1b9a, #8e24aa); }
+    .sh-teal   { background: linear-gradient(135deg, #00695c, #00897b); }
+    .sh-red    { background: linear-gradient(135deg, #b71c1c, #d32f2f); }
+    .sh-orange { background: linear-gradient(135deg, #e65100, #f57c00); }
+    .sh-indigo { background: linear-gradient(135deg, #283593, #3f51b5); }
+
+    /* ===== SUBSECTION ===== */
+    .subsection {
+      background: white;
+      border-radius: 14px;
+      padding: 24px 26px;
+      margin-bottom: 22px;
+      box-shadow: 0 2px 14px rgba(0,0,0,0.05);
+      border-top: 4px solid transparent;
+    }
+    .sub-blue   { border-top-color: #1565c0; }
+    .sub-purple { border-top-color: #6a1b9a; }
+    .sub-teal   { border-top-color: #00695c; }
+    .sub-red    { border-top-color: #b71c1c; }
+    .sub-orange { border-top-color: #e65100; }
+    .sub-indigo { border-top-color: #283593; }
+
+    .subsection h4 {
+      font-size: 1.1em;
+      font-weight: 800;
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 2px dashed var(--border);
+      color: var(--secondary);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* ===== INFO BOX ===== */
+    .infobox {
+      border-radius: 10px;
+      padding: 15px 18px;
+      margin: 16px 0;
+      display: flex;
+      gap: 12px;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+    .infobox .ib-icon { font-size: 1.35em; flex-shrink: 0; margin-top: 1px; }
+    .ib-blue   { background: var(--bluelight);   border-right: 5px solid #1565c0; color: #0d1b5e; }
+    .ib-green  { background: var(--greenlight);  border-right: 5px solid #2e7d32; color: #1b3a1f; }
+    .ib-red    { background: var(--redlight);    border-right: 5px solid #c62828; color: #5c0000; }
+    .ib-yellow { background: var(--yellowlight); border-right: 5px solid #f9a825; color: #4a2c00; }
+    .ib-purple { background: var(--purplelight); border-right: 5px solid #6a1b9a; color: #2d0048; }
+    .ib-teal   { background: var(--teallight);   border-right: 5px solid #006064; color: #003033; }
+
+    /* ===== LIST STYLES (SAFARI & MOBILE FIXED) ===== */
+    .list-styled {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0;
+    }
+    .list-styled li {
+      padding: 7px 0;
+      display: flex;
+      align-items: flex-start;
+      gap: 9px;
+      font-size: 14px;
+      border-bottom: 1px dotted #e8eaf6;
+    }
+    .list-styled li:last-child { border-bottom: none; }
+    .list-styled li::before {
+      content: '◈';
+      color: var(--accent1);
+      flex-shrink: 0;
+      margin-top: 2px;
+      font-weight: bold;
+    }
+    .list-styled.green li::before  { color: #2e7d32; }
+    .list-styled.red li::before    { color: #c62828; }
+    .list-styled.purple li::before { color: #6a1b9a; }
+    .list-styled.teal li::before   { color: #006064; }
+    .list-styled.orange li::before { color: #e65100; }
+
+    .li-content {
+      flex: 1;
+      display: inline;
+      line-height: 1.85;
+      color: var(--text);
+    }
+
+    /* ===== KEY-VALUE ROW (SAFARI & MOBILE FIXED INLINE) ===== */
+    .kv-row {
+      padding: 8px 0;
+      font-size: 14px;
+      border-bottom: 1px dotted #e0e4f8;
+      line-height: 1.85;
+    }
+    .kv-row:last-child { border-bottom: none; }
+    .kv-key {
+      font-weight: 700;
+      color: var(--secondary);
+      display: inline;
+      margin-left: 6px;
+    }
+    .kv-value {
+      color: var(--text);
+      display: inline;
+    }
+
+    /* ===== TAGS / PILLS ===== */
+    .tag {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 700;
+      margin: 2px 3px;
+      vertical-align: middle;
+    }
+    .tag-blue   { background: #e3f2fd; color: #0d47a1; }
+    .tag-red    { background: #ffebee; color: #b71c1c; }
+    .tag-green  { background: #e8f5e9; color: #1b5e20; }
+    .tag-purple { background: #f3e5f5; color: #4a148c; }
+    .tag-orange { background: #fff3e0; color: #e65100; }
+    .tag-teal   { background: #e0f7fa; color: #006064; }
+    .tag-yellow { background: #fff8e1; color: #f57f17; }
+
+    /* ===== TABLE ===== */
+    .table-wrap {
+      overflow-x: auto;
+      margin: 18px 0;
+      border-radius: 12px;
+      border: 1px solid #d9dff4;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13.5px;
+      text-align: right;
+    }
+    table thead tr {
+      background: var(--primary);
+      color: white;
+    }
+    table thead th {
+      padding: 13px 14px;
+      font-weight: 700;
+      border-bottom: 2px solid #0d1b5e;
+    }
+    table tbody tr:nth-child(even) { background: #f8faff; }
+    table tbody tr:hover { background: #eef2ff; }
+    table tbody td {
+      padding: 11px 14px;
+      border-bottom: 1px solid #e0e4f8;
+      vertical-align: middle;
+      line-height: 1.7;
+    }
+    table tbody tr:last-child td { border-bottom: none; }
+
+    /* ===== HIGHLIGHT BADGE ===== */
+    .hbadge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: linear-gradient(135deg, #fff176, #ffee58);
+      color: #4a2c00;
+      border: 1px solid #f9a825;
+      border-radius: 8px;
+      padding: 3px 9px;
+      font-size: 12px;
+      font-weight: 700;
+      margin: 0 4px;
+    }
+
+    /* ===== GRID 2-COL ===== */
+    .grid2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin: 16px 0;
+    }
+    @media(max-width:680px){ .grid2 { grid-template-columns: 1fr; } }
+
+    /* ===== MINI CARD ===== */
+    .mini-card {
+      border-radius: 11px;
+      padding: 15px 17px;
+      font-size: 13.5px;
+      line-height: 1.8;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+    }
+    .mc-blue   { background: #e8eaf6; border-right: 4px solid #3949ab; }
+    .mc-green  { background: #e8f5e9; border-right: 4px solid #388e3c; }
+    .mc-red    { background: #ffebee; border-right: 4px solid #e53935; }
+    .mc-purple { background: #f3e5f5; border-right: 4px solid #8e24aa; }
+    .mc-orange { background: #fff3e0; border-right: 4px solid #f4511e; }
+    .mc-teal   { background: #e0f7fa; border-right: 4px solid #00838f; }
+    .mini-card h5 { font-weight: 800; margin-bottom: 8px; font-size: 14px; color: var(--secondary); }
+
+    /* ===== FOOTER ===== */
+    .footer {
+      background: var(--primary);
+      color: rgba(255,255,255,0.9);
+      text-align: center;
+      padding: 28px 20px;
+      font-size: 13.5px;
+      margin-top: 50px;
+      border-radius: 14px;
+    }
+
+    strong.em  { color: #b71c1c; font-weight: 700; }
+    strong.em2 { color: #1565c0; font-weight: 700; }
+    strong.em3 { color: #2e7d32; font-weight: 700; }
+    strong.em4 { color: #6a1b9a; font-weight: 700; }
+
+    /* ===== سیستم تعاملی یادداشت‌های درون‌متنی مینیاتوری ===== */
+    .note-marker {
+      background-color: #ffd54f !important;
+      border: 1px solid #ffb300 !important;
+      color: #000 !important;
+      border-radius: 4px !important;
+      cursor: pointer !important;
+      padding: 1px 4px !important;
+      margin: 0 3px !important;
+      font-size: 11px !important;
+      user-select: none !important;
+      display: inline-block !important;
+      vertical-align: middle !important;
+      font-weight: bold !important;
+      position: relative;
+      animation: notePulse 2s infinite;
+    }
+    @keyframes notePulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.15); }
+      100% { transform: scale(1); }
+    }
+
+    /* کدهای CSS خالص جهت سازگاری و نمایش یادداشت در نمایشگر فایل آفلاین iOS */
+    .note-tooltip {
+      display: none;
+      position: absolute;
+      bottom: 125%;
+      right: 0;
+      background: #37474f;
+      color: #ffffff;
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-size: 12px;
+      min-width: 180px;
+      max-width: 250px;
+      z-index: 1000;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+      white-space: normal;
+      line-height: 1.5;
+      font-weight: normal;
+      text-align: right;
+    }
+    .note-marker:hover .note-tooltip, .note-marker:active .note-tooltip {
+      display: block !important;
+    }
+
+    /* ===== ساختار پنجره مودال مدیریت یادداشت‌ها ===== */
+    .modal-overlay {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(26, 35, 126, 0.5);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 10000;
+      direction: rtl;
+    }
+    .modal-card {
+      background: white;
+      border-radius: 16px;
+      padding: 24px;
+      width: 90%;
+      max-width: 500px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+      border-top: 5px solid var(--primary);
+    }
+    .modal-card h4 {
+      margin-bottom: 14px;
+      color: var(--primary);
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .modal-textarea {
+      width: 100%;
+      height: 120px;
+      padding: 10px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font-family: inherit;
+      resize: none;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+    .modal-actions {
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+    }
+    .btn {
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-family: inherit;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+      font-size: 13px;
+    }
+    .btn-primary { background: var(--primary); color: white; }
+    .btn-danger { background: var(--red); color: white; }
+    .btn-secondary { background: #eceff1; color: #37474f; }
+
+    /* ===== نوار ابزار تعاملی انتهای صفحه ===== */
+    #highlight-panel {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: white;
+      box-shadow: 0 10px 35px rgba(0,0,0,0.2);
+      border-radius: 50px;
+      padding: 10px 20px;
+      z-index: 999;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border: 2px solid var(--primary);
+      direction: rtl;
+      width: max-content;
+      max-width: 95%;
+    }
+    #highlight-panel span {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .hl-btn {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      border: 1px solid rgba(0,0,0,0.2);
+      cursor: pointer;
+      transition: transform 0.1s;
+    }
+    .hl-btn:hover { transform: scale(1.15); }
+    .hl-btn-yellow { background-color: #fff59d; }
+    .hl-btn-green  { background-color: #c8e6c9; }
+    .hl-btn-blue   { background-color: #bbdefb; }
+    .hl-btn-pink   { background-color: #f8bbd0; }
+    .panel-action-btn {
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 11.5px;
+      font-weight: bold;
+      cursor: pointer;
+      font-family: inherit;
+      white-space: nowrap;
+    }
+    .panel-action-btn-red { background: var(--red); }
+  </style>
+</head>
+<body>
+
+<!-- ===================== COVER ===================== -->
+<div class="cover">
+  <div class="badge">درسنامه جامع بیماری‌های سیستمیک و روماتولوژی</div>
+  <h1>بیماری بهجت، سندرم شوگرن، بیماری مرتبط با IgG4 و پلی‌کندریت راجعه</h1>
+  <div class="meta">
+    <div class="meta-item">مدرس: <span>جناب آقای دکتر دهقان</span></div>
+    <div class="meta-item">نویسنده: <span>احمدرضا عبداللهی پور</span></div>
+    <div class="meta-item">برای دریافت فایل های بیشتر به بات تلگرامی مراجعه کنید
+                        
+<a href="https://t.me/Medical_house_bot" target="_blank" style="
+    display: inline-block;
+    padding: 5px 12px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: Tahoma, sans-serif;
+    font-weight: bold;">
+    🤖 شروع گفتگو با بات
+</a></div>
+  </div>
+</div>
+
+<!-- ===================== TABLE OF CONTENTS ===================== -->
+<div class="toc">
+  <h3>📋 فهرست تفصیلی سرفصل‌ها</h3>
+  <ol>
+    <li><a href="#sec1">بیماری بهجت (Behçet's Disease): تاریخچه، اپیدمیولوژی جاده ابریشم و ایران، پاتوفیزیولوژی سلولی-مولکولی</a></li>
+    <li><a href="#sec2">تظاهرات بالینی بیماری بهجت: درگیری‌های ماژور (آفت دهان، آفت تناسلی، ضایعات پوستی، درگیری چشمی)</a></li>
+    <li><a href="#sec3">درگیری‌های مینور بیماری بهجت: مفصلی، نورولوژیک (نوروبهجت)، گوارشی و عروقی (واسکولوبهجت)</a></li>
+    <li><a href="#sec4">معیارهای تشخیصی بهجت (ISG، معیار ایران، معیار ریوایز شده بین‌المللی ICBD)، تست پاترژی و درمان</a></li>
+    <li><a href="#sec5">سندرم شوگرن (Sjögren Syndrome): اتیوپاتوژنز، اپیدمیولوژی، تظاهرات گلاندولار (خشکی چشم، دهان و سایر غدد)</a></li>
+    <li><a href="#sec6">تظاهرات اکستراگلاندولار شوگرن، ریسک لنفوم، غربالگری لوپوس نوزادی و یافته‌های آزمایشگاهی</a></li>
+    <li><a href="#sec7">پاتولوژی بیوپسی لب، معیارهای طبقه‌بندی ACR/EULAR 2016، تشخیص افتراقی و پروتکل‌های درمانی شوگرن</a></li>
+    <li><a href="#sec8">بیماری مرتبط با IgG4 (IgG4-Related Disease): تاریخچه (دکتر خسروشاهی)، پاتولوژی استوریفرم، ویژگی‌های بالینی و درگیری اعضا</a></li>
+    <li><a href="#sec9">یافته‌های سرولوژی، بیوپسی و درمان IgG4-RD</a></li>
+    <li><a href="#sec10">پلی‌کندریت راجعه (Relapsing Polychondritis - اسلایدهای ۷۹ الی ۸۸): غضروف‌های درگیر، کرایتریای تشخیصی و پروتکل درمان</a></li>
+    <li><a href="#sec11">جدول تطبیقی و مقایسه جامع چهار بیماری مورد بحث در جلسه</a></li>
+  </ol>
+</div>
+
+<!-- ===================== MAIN CONTENT ===================== -->
+<div class="main">
+
+  <!-- SECTION 1: BEHCET OVERVIEW & PATHOPHYSIOLOGY -->
+  <div id="sec1" class="section-header sh-blue">
+    <div class="icon">🏛️</div>
+    <span>بخش اول: بیماری بهجت (Behçet's Disease) – تاریخچه، اپیدمیولوژی و پاتوفیزیولوژی</span>
+  </div>
+
+  <div class="subsection sub-blue">
+    <h4>۱. تاریخچه و ماهیت کلی بیماری (اسلایدهای ۲ الی ۴)</h4>
+    <p>
+      بیماری بهجت یک بیماری التهابی مولتی‌سیستمیک (<span class="tag tag-blue">Multisystem Inflammatory Disease</span>) و مزمن است که مشخصه بارز آن یک تابلوی بالینی بسیار خاص (<span class="tag tag-indigo">Particular Clinical Picture</span>) همراه با سیر دوره‌ای و نوسانی مشتمل بر حملات عودکننده و دوره‌های خاموشی و بهبود موقت (<span class="tag tag-yellow">Attacks and Remissions</span>) می‌باشد.
+    </p>
+
+    <div class="infobox ib-blue">
+      <span class="ib-icon">📜</span>
+      <div>
+        <strong>پیشینه تاریخی نام‌گذاری بیماری:</strong>
+        اولین توصیف ثبت‌شده از علائم این بیماری به قرن پنجم پیش از میلاد توسط <strong>بقراط (Hippocrates)</strong> بازمی‌گردد که بیمارانی با علائم منطبق بر زخم‌های دهانی-تناسلی و یووئیت مزمن را شرح داد. با این حال، شناسایی و معرفی علمی آن به عنوان یک سندرم مستقل بالینی در سال <strong>۱۹۳۷ میلادی</strong> (در اسلاید ۳ به عنوان رفرنس سمینار سال ۱۹۷۳ ذکر شده است) توسط متخصص پوست شهیر اهل ترکیه، <strong>دکتر خلوصی بهجت (Hulusi Behçet)</strong> در قالب معرفی یک سری ۳ بیماری (<span class="tag tag-blue">Case series of 3 patients</span>) صورت گرفت و به افتخار وی نام‌گذاری شد.
+      </div>
+    </div>
+
+    <h4>۲. اپیدمیولوژی جهانی و جایگاه ایران (جاده ابریشم) (اسلایدهای ۵ الی ۹)</h4>
+    <p>
+      توزیع جغرافیایی بیماری بهجت کاملاً منطبق بر مسیر تجاری باستانی <strong>«جاده ابریشم» (Silk Road)</strong> است که از سواحل دریای مدیترانه، خاورمیانه و آسیای میانه عبور کرده و تا شرق دور و ژاپن ادامه می‌یابد. علت این توزیع جغرافیایی منحصر‌به‌فرد، نقش پررنگ <strong>زمینه ژنتیکی مشترک</strong>، ازدواج‌های درون‌جمعیتی و مهاجرت‌های تاریخی در طول این شاهراه باستانی است.
+    </p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>کشور / منطقه</th>
+            <th>میزان شیوع در ۱۰۰,۰۰۰ نفر جمعیت</th>
+            <th>توضیحات و نکات اپیدمیولوژیک بالینی</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>ترکیه (Turkey)</strong></td>
+            <td><strong class="em">۲۰ تا ۳۷۰ در ۱۰۰,۰۰۰</strong></td>
+            <td>بالاترین شیوع بیماری در کل جهان؛ در برخی روستاهای خاص با آمار بالای ازدواج‌های فامیلی به ۳۷۰ در ۱۰۰ هزار نفر می‌رسد.</td>
+          </tr>
+          <tr>
+            <td><strong>ایران (Iran)</strong></td>
+            <td><strong class="em">۸۰ در ۱۰۰,۰۰۰</strong></td>
+            <td><strong>دومین کشور پرتعداد و شایع‌ترین در جهان</strong> پس از ترکیه؛ برگرفته از داده‌های رجیستری ۴۰ ساله پروفسور دواچی.</td>
+          </tr>
+          <tr>
+            <td><strong>عربستان سعودی (Saudi Arabia)</strong></td>
+            <td>۲۰ در ۱۰۰,۰۰۰</td>
+            <td>شیوع بالا در شبه‌جزیره عربستان.</td>
+          </tr>
+          <tr>
+            <td><strong>چین (China)</strong></td>
+            <td>۱۴ در ۱۰۰,۰۰۰</td>
+            <td>حوزه انتهای شرقی جاده ابریشم با شیوع متوسط به بالا.</td>
+          </tr>
+          <tr>
+            <td><strong>ژاپن (Japan)</strong></td>
+            <td>۱۳.۴ در ۱۰۰,۰۰۰</td>
+            <td>شیوع بالا همراه با درگیری‌های چشمی شدید.</td>
+          </tr>
+          <tr>
+            <td><strong>مصر (Egypt)</strong></td>
+            <td>۷.۶ در ۱۰۰,۰۰۰</td>
+            <td>منطقه شمال آفریقا.</td>
+          </tr>
+          <tr>
+            <td><strong>اسپانیا (Spain)</strong></td>
+            <td>۷.۵ در ۱۰۰,۰۰۰</td>
+            <td>حوزه مدیترانه غربی.</td>
+          </tr>
+          <tr>
+            <td><strong>ایتالیا (Italy)</strong></td>
+            <td>۲.۵ در ۱۰۰,۰۰۰</td>
+            <td>مدیترانه مرکزی.</td>
+          </tr>
+          <tr>
+            <td><strong>پرتغال (Portugal)</strong></td>
+            <td>۱.۵ در ۱۰۰,۰۰۰</td>
+            <td>شبه‌جزیره ایبری.</td>
+          </tr>
+          <tr>
+            <td><strong>کویت (Kuwait)</strong></td>
+            <td>۱.۲ در ۱۰۰,۰۰۰</td>
+            <td>حوزه خلیج فارس.</td>
+          </tr>
+          <tr>
+            <td><strong>آلمان (Germany)</strong></td>
+            <td>۰.۷۲ در ۱۰۰,۰۰۰</td>
+            <td>اروپای غربی (شیوع بسیار پایین؛ عمدتاً در مهاجران ترک‌تبار).</td>
+          </tr>
+          <tr>
+            <td><strong>انگلستان (UK)</strong></td>
+            <td>۰.۶۴ در ۱۰۰,۰۰۰</td>
+            <td>اروپای شمالی (بسیار نادر).</td>
+          </tr>
+          <tr>
+            <td><strong>آمریکای شمالی و استرالیا</strong></td>
+            <td>بسیار نادر (< ۱ در ۱۰۰,۰۰۰)</td>
+            <td>خارج از مسیر جاده ابریشم، ابتلا موردی و نادر است.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="grid2">
+      <div class="mini-card mc-blue">
+        <h5>📊 ویژگی‌های دموگرافیک بیماری در ایران</h5>
+        <div class="kv-row"><span class="kv-key">نسبت جنسیتی (مرد به زن):</span><span class="kv-value"><strong>۱.۱۴ به ۱</strong> (برخلاف سایر بیماری‌های خودایمنی، شیوع و به‌ویژه شدت بیماری در آقایان بیشتر است).</span></div>
+        <div class="kv-row"><span class="kv-key">پیک سن بروز:</span><span class="kv-value"><strong>دهه سوم زندگی (۲۰ الی ۳۰ سالگی)</strong>.</span></div>
+        <div class="kv-row"><span class="kv-key">میانگین سن بروز در ایران:</span><span class="kv-value"><strong class="em2">۲۵.۶ سالگی</strong>.</span></div>
+        <div class="kv-row"><span class="kv-key">بازه نادر بودن بروز:</span><span class="kv-value">بروز بیماری قبل از اواخر نوجوانی (< ۱۶ سال) و پس از سن ۵۰ سالگی بسیار نادر است.</span></div>
+      </div>
+
+      <div class="mini-card mc-purple">
+        <h5>🧬 ژنتیک و استعداد خانوادگی (اسلایدهای ۱۰ و ۳۸)</h5>
+        <div class="kv-row"><span class="kv-key">مارکر ژنتیکی اصلی:</span><span class="kv-value"><strong>HLA-B5</strong> و به ویژه آلل فرعی <strong>HLA-B51</strong>.</span></div>
+        <div class="kv-row"><span class="kv-key">شیوع در بیماران:</span><span class="kv-value"><strong class="em">۵۰٪ تا ۶۰٪</strong> از بیماران مبتلا به بهجت دارای HLA-B51 هستند.</span></div>
+        <div class="kv-row"><span class="kv-key">شیوع در جمعیت عادی:</span><span class="kv-value">تنها <strong>۲۰٪</strong> از جمعیت سالم ناقل این آلل هستند.</span></div>
+        <div class="kv-row"><span class="kv-key">ارزش بالینی:</span><span class="kv-value">نقش کمکی در ارزیابی استعداد بالینی، اما به تنهایی تشخیصی قطعی نیست.</span></div>
+      </div>
+    </div>
+
+    <h4>۳. پاتوفیزیولوژی سلولی و مولکولی (اسلایدهای ۱۰ الی ۱۲)</h4>
+    <p>
+      پاتوژنز بهجت حاصل برهم‌کنش پیچیده <strong>پاسخ ایمنی ذاتی (Innate)</strong> و <strong>ایمنی اکتسابی (Adaptive)</strong> در یک بستر ژنتیکی مستعد (HLA-B51) در مواجهه با محرک‌های محیطی است:
+    </p>
+
+    <ul class="list-styled blue">
+      <li><span class="li-content"><strong>آنتی‌ژن‌های محرک:</strong> آنتی‌ژن‌های ویروسی یا باکتریایی، سوپرآنتی‌ژن‌های استافیلوکوکی (<span class="tag tag-yellow">Staphylococcus Superantigen</span>) و اتوآنتی‌ژن‌های تغییرشکل‌یافته مانند پروتئین‌های شوک حرارتی (<span class="tag tag-blue">Heat Shock Proteins - HSP</span>).</span></li>
+      <li><span class="li-content"><strong>سلول‌های ارائه‌دهنده آنتی‌ژن (APC):</strong> پردازش آنتی‌ژن و عرضه آن از طریق مولکول HLA-B51 به لنفوسیت‌های T؛ در این فرآیند مقادیر بالایی از سایتوکین‌های پیش‌التهابی TNF، اینترلوکین ۱۲ (IL-12) و اینترلوکین ۱۸ (IL-18) ترشح می‌شود.</span></li>
+      <li><span class="li-content"><strong>پاسخ سلول‌های T (مسیر Th1 و Th17):</strong> تحریک لنفوسیت‌های T و تولید اینترفرون گاما (IFN-γ)، اینترلوکین ۱۷ (IL-17) و اینترلوکین ۸ (IL-8) که منجر به ترغیب التهاب شدید نوتروفیلی می‌شود.</span></li>
+      <li><span class="li-content"><strong class="em">بیش‌فعالی نوتروفیل‌ها (Neutrophil Hyperactivity):</strong> رکن کلیدی پاتولوژی بهجت! سلول‌های پلی‌مورفونوکلئر (PMN) دچار کموتاکسی شدید، چسبندگی بالا و تولید بیش از حد رادیکال‌های آزاد اکسیژن می‌شوند. این بیش‌فعالی نوتروفیل‌ها پاسخ‌دهنده به داروی کلشیسین است.</span></li>
+      <li><span class="li-content"><strong>پاسخ سلول‌های B و اندوتلیوم عروق:</strong> ترشح سایتوکین‌ها باعث تحریک B cell و تولید اتوآنتی‌بادی‌های ضد سلول اندوتلیال (<span class="tag tag-red">AECA: Anti-Endothelial Cell Antibodies</span>) می‌شود. با افزایش بیان مولکول‌های چسبان ICAM و VCAM و سایتوکین IL-8 بر سطح اندوتلیوم، آسیب عروقی، واسکولیت انسدادی و تمایل شدید به <strong class="em">ترومبوز (Thrombosis)</strong> ایجاد می‌گردد.</span></li>
+    </ul>
+  </div>
+
+  <!-- SECTION 2: BEHCET CLINICAL MANIFESTATIONS - MAJOR -->
+  <div id="sec2" class="section-header sh-indigo">
+    <div class="icon">🔍</div>
+    <span>بخش دوم: تظاهرات بالینی ماژور بیماری بهجت (مخاطی، پوستی و چشمی)</span>
+  </div>
+
+  <div class="subsection sub-indigo">
+    <h4>۱. تقسیم‌بندی کلی علائم بالینی (اسلاید ۱۴)</h4>
+    <div class="grid2">
+      <div class="mini-card mc-blue">
+        <h5>علائم ماژور (Major Symptoms)</h5>
+        <ul class="list-styled blue">
+          <li><span class="li-content"><strong>ضایعات مخاطی (Mucous Membrane):</strong> آفت دهانی (<span class="tag tag-blue">Oral</span>) و آفت تناسلی (<span class="tag tag-indigo">Genital</span>).</span></li>
+          <li><span class="li-content"><strong>ضایعات پوستی (Skin):</strong> سودوفولیکولیت، اریتما نودوزوم و آفت پوستی.</span></li>
+          <li><span class="li-content"><strong>درگیری‌های چشمی (Eyes):</strong> انواع یووئیت، واسکولیت رتین و هایپوپیون.</span></li>
+        </ul>
+      </div>
+      <div class="mini-card mc-teal">
+        <h5>علائم مینور (Minor Symptoms)</h5>
+        <ul class="list-styled teal">
+          <li><span class="li-content"><strong>مفاصل (Joints):</strong> اولیگوآرتریت غیرفرسایشی مفاصل بزرگ.</span></li>
+          <li><span class="li-content"><strong>سیستم عصبی مرکزی (CNS):</strong> پارانشیمال و ترومبوز سینوس وریدی.</span></li>
+          <li><span class="li-content"><strong>دستگاه گوارش (GI):</strong> زخم‌های ایلئوسیکال مستعد پرفوراسیون.</span></li>
+          <li><span class="li-content"><strong>سیستم عروقی (Vessels):</strong> فلبیت، DVT، آنوریسم شریانی و ترومبوز.</span></li>
+          <li><span class="li-content"><strong>سایر موارد (Others):</strong> اپیدیدیمیت، درگیری قلبی و ریوی.</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <h4>۲. آفت دهانی (Oral Aphthosis) (اسلایدهای ۱۵ الی ۱۸)</h4>
+    <div class="infobox ib-yellow">
+      <span class="ib-icon">⭐</span>
+      <div>
+        <strong>شایع‌ترین تظاهر اولیه و کلینیکی بهجت:</strong>
+        آفت دهانی در <strong>۷۹٪</strong> بیماران ایرانی به عنوان اولین تظاهر شروع بیماری بروز می‌کند و نهایتاً در طول سیر بیماری، <strong>۹۷٪</strong> تمام مبتلایان دچار آن می‌شوند.
+      </div>
+    </div>
+
+    <div class="grid2">
+      <div>
+        <ul class="list-styled">
+          <li><span class="li-content"><strong>تعداد:</strong> معمولاً متعدد (<span class="tag tag-blue">Usually multiple</span>).</span></li>
+          <li><span class="li-content"><strong>قطر و اندازه:</strong> معمولاً ۱ تا ۵ میلی‌متر (گاهی به ندرت به صورت آفت‌های ماژور با قطر بالای ۱ سانتی‌متر دیده می‌شود).</span></li>
+          <li><span class="li-content"><strong>شکل هندسی:</strong> گرد یا بیضی (<span class="tag tag-indigo">Round or oval</span>) با حدود کاملاً مشخص.</span></li>
+          <li><span class="li-content"><strong>نمای قاعده:</strong> پوشیده از لایه زرد-سفید فیبرینی-نکروتیک (<span class="tag tag-yellow">Fibrin-coated base</span>).</span></li>
+          <li><span class="li-content"><strong>حاشیه:</strong> دارای هاله قرمز التهابی بارز در اطراف (<span class="tag tag-red">Surrounding erythema</span>).</span></li>
+          <li><span class="li-content"><strong>دردناکی:</strong> <strong class="em">همواره شدیداً دردناک است!</strong> اگر زخم دهانی بدون درد باشد، قطعاً آفت بهجت نیست و باید به فکر بدخیمی، سفلیس یا لوپوس بود.</span></li>
+          <li><span class="li-content"><strong>طول دوره:</strong> حدود <strong>۱۰ روز</strong> طول کشیده و سپس خودبه‌خود بهبود می‌یابد.</span></li>
+          <li><span class="li-content"><strong class="em3">عدم برجای گذاشتن اسکار:</strong> آفت‌های دهانی بهجت معمولاً هیچ‌گونه اسکار فیبروتیک یا نقصی بر جای نمی‌گذارند.</span></li>
+        </ul>
+      </div>
+      <div class="mini-card mc-orange">
+        <h5>⚠️ بهداشت دهان و شدت بیماری (اسلاید ۱۸)</h5>
+        <p>
+          پژوهش‌های بالینی ارتباط مستقیمی بین کاهش سطح سلامت و بهداشت دهان (<span class="tag tag-red">Decreased oral health</span>) و افزایش شدت بیماری بهجت (<span class="tag tag-red">Disease severity</span>) نشان داده‌اند.
+        </p>
+        <p style="margin-top:8px;">
+          در بیمارانی که مسواک نمی‌زنند و پلاک دندانی/عفونت‌های لثه دارند، آفت‌ها مکررتر، طولانی‌تر و مقاوم به درمان هستند. بنابراین، یکی از ارکان غیردارویی حیاتی درمان، <strong>رعایت اکید بهداشت دهان و دندان</strong> است.
+        </p>
+        <div class="hbadge" style="margin-top:10px;">نکته افتراقی: ۲۰ تا ۲۵ درصد جامعه عادی دچار آفت ساده می‌شوند؛ آفت‌های مشکوک به بهجت بسیار راجعه، متعدد و همراه با سایر علائم ارگانیک هستند.</div>
+      </div>
+    </div>
+
+    <h4>۳. آفت تناسلی (Genital Aphthous) (اسلایدهای ۱۹ الی ۲۱)</h4>
+    <p>
+      در <strong>۶۵٪</strong> از بیماران مبتلا به بهجت دیده می‌شود. گرچه از نظر ظاهری (قاعده زرد-سفید با هاله اریتماتوز) مشابه آفت دهانی است، اما تفاوت‌های بسیار کلیدی با آن دارد:
+    </p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>ویژگی بالینی</th>
+            <th>آفت دهانی (Oral)</th>
+            <th>آفت تناسلی (Genital)</th>
+            <th>اهمیت تشخیصی بالینی</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>تعداد ضایعات</strong></td>
+            <td>معمولاً متعدد (چندین ضایعه همزمان)</td>
+            <td><strong>تعداد کمتر</strong> (معمولاً تک یا انگشت‌شمار)</td>
+            <td>ضایعه ژنیتال محدودتر ولی تهاجمی‌تر است.</td>
+          </tr>
+          <tr>
+            <td><strong>عمق و ابعاد</strong></td>
+            <td>سطحی‌تر، قطر ۱ تا ۵ میلی‌متر</td>
+            <td><strong>بزرگ‌تر و بسیار عمیق‌تر</strong></td>
+            <td>تخریب بافتی بیشتری در مخاط ژنیتال رخ می‌دهد.</td>
+          </tr>
+          <tr>
+            <td><strong>مدت زمان ماندگاری</strong></td>
+            <td>حدود ۷ الی ۱۰ روز</td>
+            <td><strong>طولانی‌تر</strong> (معمولاً ۲ الی ۴ هفته)</td>
+            <td>ضایعه دیرتر جمع و اپیتلیزه می‌شود.</td>
+          </tr>
+          <tr>
+            <td><strong>برجای گذاشتن اسکار (Sequel)</strong></td>
+            <td><strong>بدون اسکار</strong> (Heals without scar)</td>
+            <td><strong class="em">اسکار مشخص (باقی‌ماندن اسکار هیپوپیگمانته)</strong></td>
+            <td><strong>ارزشمندترین کلید بالینی:</strong> پزشک در معاینه با مشاهده اسکار قبلی آفت تناسلی، تاریخچه ابتلا به بهجت را مستند می‌کند.</td>
+          </tr>
+          <tr>
+            <td><strong>اختصاصیت تشخیصی</strong></td>
+            <td>در ۲۵٪ افراد عادی جامعه هم هست</td>
+            <td><strong class="em3">بسیار اختصاصی برای بهجت (Most specific)</strong></td>
+            <td>دیدن آفت ژنیتال عودکننده شک به بهجت را تقریباً قطعی می‌کند.</td>
+          </tr>
+          <tr>
+            <td><strong>شایع‌ترین محل‌های بروز</strong></td>
+            <td>مخاط بوکال، زبان، لثه، لب</td>
+            <td>در مردان: <strong>کیسه بیضه (Scrotum)</strong><br>در زنان: <strong>لبیوم‌ها (Labia majora & minora)</strong></td>
+            <td>در چین‌های پوستی-مخاطی تناسلی تمرکز دارند.</td>
+          </tr>
+          <tr>
+            <td><strong>نقاطی که درگیر نمی‌شوند!</strong></td>
+            <td>-</td>
+            <td><strong class="em">گلنز پنیس (Glans penis) و پیشابراه (Urethra)</strong></td>
+            <td>درگیری گلنز یا یورتریت مطرح‌کننده <em>سندرم رایتر/آرتریت رآکتیو</em> است، نه بهجت!</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4>۴. ضایعات پوستی (Skin Lesions) (اسلایدهای ۲۲ الی ۲۴)</h4>
+    <p>
+      درگیری‌های پوستی در <strong>۷۲٪</strong> بیماران بروز می‌کند و شامل ۳ نمای بالینی تیپیک است:
+    </p>
+
+    <div class="grid2">
+      <div class="mini-card mc-purple">
+        <h5>۱. سودوفولیکولیت / پاپولوپوستولار (۶۵٪ بیماران)</h5>
+        <ul class="list-styled purple">
+          <li><span class="li-content"><strong>شایع‌ترین ضایعه پوستی بهجت</strong> (<span class="tag tag-purple">Most frequent skin lesion</span>).</span></li>
+          <li><span class="li-content"><strong>شکل ظاهری:</strong> ضایعات گنبدی‌شکل، برجسته، قرمز با مرکز چرکی (<span class="tag tag-purple">Dome, red and elevated</span>).</span></li>
+          <li><span class="li-content"><strong>تفاوت با آکنه و فولیکولیت میکروبی:</strong> برخلاف فولیکولیت عفونی، نوک‌تیز نیست، به ریشه مو وابسته نبوده و بر روی پایه‌ای اریتماتوز و کاملاً <strong class="em">استریل (فاقد باکتری)</strong> تشکیل می‌شود.</span></li>
+          <li><span class="li-content"><strong>محل شایع:</strong> عمدتاً در <strong>اندام‌های تحتانی (پاها)</strong>، تنه و صورت.</span></li>
+        </ul>
+      </div>
+
+      <div class="mini-card mc-red">
+        <h5>۲. اریتما نودوزوم (Erythema Nodosum)</h5>
+        <ul class="list-styled red">
+          <li><span class="li-content"><strong>شیوع در ایران:</strong> در <strong>۲۲٪</strong> بیماران ایرانی مشاهده می‌شود.</span></li>
+          <li><span class="li-content"><strong>ویژگی‌های ضایعه:</strong> ندول‌های زیرجلدی، بسیار دردناک، گرم، متورم و اریتماتوز (<span class="tag tag-red">Painful, Edematous, Erythematous nodule</span>).</span></li>
+          <li><span class="li-content"><strong>محل تیپیک:</strong> سطح قدامی ساق پاها (ناحیه پرتایبیال اندام تحتانی).</span></li>
+          <li><span class="li-content"><strong>سیر بهبودی:</strong> پس از چند هفته الی ۲-۳ ماه برطرف شده و جای خود را به تغییر رنگ و هیپرپیگمانتاسیون پوستی می‌دهد.</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mini-card mc-teal" style="margin-top:14px;">
+      <h5>۳. آفت پوستی (Skin Aphthous / Extragenital Ulcers) (اسلاید ۲۴)</h5>
+      <p>
+        عارضه‌ای <span class="tag tag-teal">نادر ولی فوق‌العاده اختصاصی (Rare but highly characteristic)</span> برای بیماری بهجت. این زخم‌ها کاملاً شبیه آفت دهانی ولی در ابعاد بسیار بزرگ‌تر به قطر <strong>۲۰ تا ۳۰ میلی‌متر</strong> و با حاشیه‌ای گرد و منظم رخ می‌دهند. محل بروز تیپیک آن‌ها در نواحی چین‌های پوستی نظیر <strong>ران‌ها (Thigh)، زیر بغل (Axilla) و فضاهای بین انگشتی پا (Interdigital spaces)</strong> می‌باشد.
+      </p>
+    </div>
+
+    <h4>۵. درگیری چشمی (Ocular Involvement) (اسلایدهای ۲۵ الی ۲۷)</h4>
+    <div class="infobox ib-red">
+      <span class="ib-icon">👁️</span>
+      <div>
+        <strong>مهم‌ترین عامل ناتوانی، موربیدیتی و کوری در بهجت:</strong>
+        بر اساس آمار جامع مرکز تحقیقات روماتولوژی ایران (پروفسور دواچی)، درگیری چشمی در <strong>۵۶٪</strong> بیماران دیده می‌شود و اصلی‌ترین علت موربیدیتی بیماری است (<span class="tag tag-red">Most cause of morbidity</span>).
+      </div>
+    </div>
+
+    <ul class="list-styled red">
+      <li><span class="li-content"><strong>اپیدمیولوژی جنسیتی:</strong> درگیری چشمی در <strong>مردان جوان بسیار شایع‌تر (۷۰٪ مبتلایان چشمی مرد هستند) و فوق‌العاده شدیدتر</strong> و تخریب‌کننده‌تر است.</span></li>
+      <li><span class="li-content"><strong>زمان بروز:</strong> عمدتاً در همان <strong>ابتدای بیماری یا طی ۲ سال اول</strong> شروع علائم رخ می‌دهد. اگر بیماری ۵ سال سپری شود و چشم‌ها را درگیر نکرده باشد، احتمال درگیری چشمی در آینده بسیار اندک خواهد بود.</span></li>
+      <li><span class="li-content"><strong>شایع‌ترین فرم بالینی:</strong> به صورت یک <strong>پان‌یووئیت دوطرفه (<span class="tag tag-red">Bilateral Panuveitis</span>)</strong> مزمن عودکننده همراه با حملات مکرر تشدید و تخفیف (<span class="tag tag-yellow">Frequent exacerbations and remissions</span>). هر حمله در صورت عدم درمان تهاجمی، اسکار و آسیب دائمی در شبکیه به جای گذاشته و سرانجام به نابینایی (<span class="tag tag-red">Severe loss of vision / Blindness</span>) ختم می‌شود. در گذشته تا ۲۰٪ کوری گزارش می‌شد که با داروهای بیولوژیک امروزی این خطر کاهش چشمگیری داشته است.</span></li>
+      <li><span class="li-content"><strong>انواع محل‌های درگیری چشمی (اسلاید ۲۵):</strong>
+        <br>• یووئیت خلفی (<span class="tag tag-blue">Posterior Uveitis</span>): <strong>۴۵٪</strong>
+        <br>• یووئیت قدامی (<span class="tag tag-indigo">Anterior Uveitis</span>): <strong>۴۲٪</strong>
+        <br>• واسکولیت شبکیه (<span class="tag tag-red">Retinal Vasculitis</span>): <strong>۳۱٪</strong>
+      </span></li>
+      <li><span class="li-content"><strong class="em">هایپوپیون (Hypopyon) (اسلاید ۲۷):</strong> در <strong>۱۰٪</strong> از بیماران مبتلا به درگیری چشمی مشاهده می‌شود. هایپوپیون ناشی از تجمع ترشحات و اگزودای التهابی استریل و نوتروفیل‌های دژنره‌شده در کف اتاق قدامی چشم (<span class="tag tag-red">Intense inflammation in anterior chamber</span>) است که با تغییر وضعیت سر جابه‌جا می‌شود. هایپوپیون در بیماری که یووئیت قدامی دارد، <strong class="em">بسیار بسیار اختصاصی (Quite specific)</strong> برای بیماری بهجت است.</span></li>
+    </ul>
+  </div>
+
+  <!-- SECTION 3: BEHCET CLINICAL MANIFESTATIONS - MINOR -->
+  <div id="sec3" class="section-header sh-teal">
+    <div class="icon">🫀</div>
+    <span>بخش سوم: تظاهرات بالینی مینور بیماری بهجت (مفصلی، عصبی، گوارشی و عروقی)</span>
+  </div>
+
+  <div class="subsection sub-teal">
+    <h4>۱. درگیری‌های مفصلی (Articular) (اسلاید ۲۸)</h4>
+    <div class="kv-row"><span class="kv-key">میزان شیوع در ایران:</span><span class="kv-value"><strong>۳۴٪</strong> از بیماران بهجت دچار آرتریت می‌شوند.</span></div>
+    <div class="kv-row"><span class="kv-key">الگوی مفاصل:</span><span class="kv-value"><strong>اولیگوآرتریت (<span class="tag tag-teal">Oligoarthritis</span>)</strong>؛ درگیری ۲ تا ۴ مفصل بزرگ، نامتقارن.</span></div>
+    <div class="kv-row"><span class="kv-key">شایع‌ترین مفاصل:</span><span class="kv-value">مفاصل بزرگ اندام تحتانی شامل <strong>زانو (Knee) و مچ پا (Ankle)</strong>.</span></div>
+    <div class="kv-row"><span class="kv-key">ماهیت پاتولوژیک:</span><span class="kv-value"><strong class="em3">کاملاً غیرفرسایشی (Non-erosive)</strong>؛ برخلاف آرتریت روماتوئید، تخریب غضروفی و تغییر شکل مفصل ایجاد نمی‌کند.</span></div>
+    <div class="kv-row"><span class="kv-key">سیر حملات:</span><span class="kv-value">حملات گذرا (<span class="tag tag-teal">Transient attacks</span>) که ظرف چند روز تا چند هفته حتی با مصرف NSAID به طور کامل فروکش می‌کند.</span></div>
+
+    <h4>۲. درگیری سیستم عصبی (Nervous System / Neuro-Behçet) (اسلاید ۲۹)</h4>
+    <div class="infobox ib-red">
+      <span class="ib-icon">🧠</span>
+      <div>
+        <strong>شیوع پایین ولی بسیار پرخطر و پیش‌آگهی بد:</strong>
+        نوروبهجت در ایران در <strong>۳.۳٪</strong> بیماران دیده می‌شود (Rare)، اما به علت درگیری بافت مغز و عروق سر، می‌تواند عوارض غیرقابل‌جبرانی به همراه داشته باشد.
+      </div>
+    </div>
+
+    <div class="grid2">
+      <div class="mini-card mc-red">
+        <h5>۱. فرم پارانشیمال (Parenchymal) - سه‌چهارم بیماران (۷۵٪)</h5>
+        <ul class="list-styled red">
+          <li><span class="li-content">التهاب و واسکولیت ماده مغزی، کپسول داخلی و به‌ویژه <strong>ساقه مغز (Brainstem)</strong>.</span></li>
+          <li><span class="li-content">به صورت تابلوی <strong>سکته مغزی با درگیری ساقه مغز و مننگوانسفالیت (<span class="tag tag-red">Stroke with brain stem involvement & meningoencephalitis</span>)</strong> تظاهر می‌یابد.</span></li>
+          <li><span class="li-content">علائم شامل: گیجی، منگی، سردرد، تب، علائم راه‌های کورتیکواسپاینال و نقص نورولوژیک پیشرونده.</span></li>
+        </ul>
+      </div>
+
+      <div class="mini-card mc-purple">
+        <h5>۲. فرم غیرپارانشیمال / عروقی - یک‌چهارم بیماران (۲۵٪)</h5>
+        <ul class="list-styled purple">
+          <li><span class="li-content"><strong>ترومبوز سینوس‌های وریدی مغز (<span class="tag tag-purple">Cerebral Venous Sinus Thrombosis - CVST</span>)</strong>.</span></li>
+          <li><span class="li-content">منجر به سندرم افزایش فشار داخل جمجمه‌ای (ICP) با سردردهای شدید و ادم پاپی بدون نقص فوکال حرکتی می‌شود.</span></li>
+          <li><span class="li-content"><strong class="em">نکته بسیار مهم طلایی:</strong> فرم پارانشیمال و فرم ترومبوز سینوس وریدی <strong class="em">به ندرت با یکدیگر در یک بیمار رخ می‌دهند</strong> (<span class="tag tag-yellow">These two forms rarely together</span>).</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <h4>۳. درگیری دستگاه گوارش (Gastrointestinal) (اسلاید ۳۰)</h4>
+    <p>
+      درگیری گوارشی در ایران ناشایع است (تنها در <strong>۷ تا ۸ درصد</strong> بیماران رخ می‌دهد):
+    </p>
+    <ul class="list-styled teal">
+      <li><span class="li-content"><strong>شباهت به بیماری کرون:</strong> تابلوی بالینی و نمای آندوسکوپیک بسیار شبیه به بیماری کرون (<span class="tag tag-teal">Similar to Crohn's disease</span>) بوده و افتراق آن فوق‌العاده چالش‌برانگیز است.</span></li>
+      <li><span class="li-content"><strong>تعداد زخم‌ها:</strong> برخلاف کرون که زخم‌های متعدد دارد، در بهجت زخم‌ها معمولاً <strong>تک یا کمتر از ۵ عدد (<span class="tag tag-blue">Single or less than five</span>)</strong> هستند.</span></li>
+      <li><span class="li-content"><strong>محل درگیری:</strong> شایع‌ترین محل، <strong>ناحیه ایلئوسیکال (Ileocecal)</strong> است.</span></li>
+      <li><span class="li-content"><strong class="em">تمایل شدید به سوراخ‌شدگی:</strong> زخم‌ها عمیق بوده و به دلیل واسکولیت و ایسکمی جدار روده، <strong>شدیداً مستعد پرفوراسیون (<span class="tag tag-red">Prone to perforate</span>)</strong> و خونریزی‌های تهدیدکننده حیات هستند.</span></li>
+      <li><span class="li-content"><strong>نقاط افتراق کلیدی با کرون:</strong> درگیری‌های <strong>پری‌آنال (اطراف مقعد) و رکتال در بهجت بسیار نادر است</strong> (<span class="tag tag-green">Rare in perianal and rectal area</span>) در حالی که در کرون فیستول‌ها و ضایعات پری‌آنال فوق‌العاده شایع‌اند.</span></li>
+    </ul>
+
+    <h4>۴. درگیری‌های عروقی (Vascular Lesions / Vasculo-Behçet) (اسلایدهای ۳۱ الی ۳۳)</h4>
+    <div class="infobox ib-blue">
+      <span class="ib-icon">🩸</span>
+      <div>
+        درگیری‌های عروقی در <strong>۸.۵٪</strong> بیماران ایرانی وجود دارد. در بیماری بهجت هم سیستم وریدی و هم سیستم شریانی درگیر می‌شوند، اما <strong>درگیری‌های وریدی به مراتب شایع‌تر از شریانی</strong> هستند.
+      </div>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>نوع درگیری عروقی</th>
+            <th>اشکال بالینی و تظاهرات اختصاصی</th>
+            <th>ملاحظات مهم درمانی و بالینی</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>ضایعات وریدی (Venous Lesions)<br>(بسیار شایع‌تر)</strong></td>
+            <td>
+              ۱. <strong>ترومبوفلبیت سطحی (Superficial Thrombophlebitis):</strong> بیشتر در آقایان، به صورت طناب عروقی قرمز، متورم، سفت و دردناک در پوست.<br>
+              ۲. <strong>ترومبوز ورید عمقی (DVT):</strong> در اندام‌های تحتانی.<br>
+              ۳. <strong>ترومبوز وریدهای بزرگ احشایی (Large Vein Thrombosis):</strong> درگیری ورید اجوف تحتانی (IVC)، ورید اجوف فوقانی (SVC) و وریدهای کبدی (ایجاد سندرم باد-کیاری).
+            </td>
+            <td>
+              <strong class="em">نکته کلیدی بالینی:</strong> ترومبوفلبیت سطحی اغلب با <strong>DVT مخفی</strong> همراه است. با دیدن یک فلبیت سطحی، پزشک موظف است بیمار را از نظر ترومبوز وریدهای عمقی و عروق شکمی به طور کامل غربالگری و ورک‌آپ کند (<span class="tag tag-red">Should workup other vascular involvement</span>).
+            </td>
+          </tr>
+          <tr>
+            <td><strong>ضایعات شریانی (Arterial Lesions)<br>(کمتر از ۵٪ مبتلایان)</strong></td>
+            <td>
+              ۱. <strong>آئورتیت (Aortitis):</strong> التهاب جدار آئورت.<br>
+              ۲. <strong>آنوریسم شریان‌های محیطی (Peripheral Arterial Aneurysm):</strong> مستعد گشادشدگی و پارگی ناگهانی.<br>
+              ۳. <strong>ترومبوز شریانی (Arterial Thrombosis)</strong>.<br>
+              ۴. <strong>واسکولیت و آنوریسم شریان ریوی (Pulmonary Artery Vasculitis):</strong> همراه با تنگی‌نفس، درد سینه، سرفه و <strong class="em">هموپتیزی شدید و کشنده</strong>.
+            </td>
+            <td>
+              <strong class="em">هشدار مرگبار بالینی:</strong> علائم درگیری شریان ریوی ممکن است به اشتباه <em>آمبولی ریه (PE)</em> تلقی شود! تجویز داروهای ضدانعقاد (هپارین/وارفارین) به دلیل وجود آنوریسم شریان ریوی منجر به خونریزی داخل ریوی و پارگی فاجعه‌بار عروق می‌شود. درمان اصلی در اینجا <strong>سرکوب شدید سیستم ایمنی</strong> است، نه آنتی‌کواگولان!
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4>۵. ویژگی‌های منفی بهجت (تفاوت‌های متمایزکننده با سایر بیماری‌های خودایمنی) (اسلاید ۳۴)</h4>
+    <div class="mini-card mc-teal">
+      <h5>آنچه در بیماری بهجت معمولاً «وجود ندارد» (Unlike other autoimmune diseases):</h5>
+      <ul class="list-styled teal">
+        <li><span class="li-content"><strong>نبود اتوآنتی‌بادی‌ها (No Autoantibodies):</strong> تست‌های ANA، Anti-dsDNA، RF، Anti-Sm همگی معمولاً منفی هستند. حتی آنتی‌بادی ضد اندوتلیال (AECA) نیز حساسیت و اختصاصیت لازم برای کاربرد روزمره در تشخیص کلینیکی را ندارد.</span></li>
+        <li><span class="li-content"><strong>عدم وجود پدیده رینود (No Raynaud's phenomenon)</strong>.</span></li>
+        <li><span class="li-content"><strong>عدم همراهی با سندرم شوگرن ثانویه (No Sjogren's syndrome)</strong>.</span></li>
+        <li><span class="li-content"><strong>عدم بروز ترومبوسیتوپنی (No Thrombocytopenia)</strong> (پلاککت‌ها طبیعی یا در فاز التهاب بالا هستند).</span></li>
+        <li><span class="li-content"><strong>عدم وجود آنمی همولیتیک خودایمنی (No Hemolytic anemia)</strong>.</span></li>
+        <li><span class="li-content"><strong>عدم حساسیت به نور آفتاب (No Sun hypersensitivity / Photosensitivity)</strong> (برخلاف لوپوس).</span></li>
+        <li><span class="li-content"><strong>عدم درگیری سروزال (No Serosal involvement)</strong> (پلوریت و پریکاردیت در بهجت غایب است).</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- SECTION 4: BEHCET DIAGNOSIS & TREATMENT -->
+  <div id="sec4" class="section-header sh-blue">
+    <div class="icon">⚖️</div>
+    <span>بخش چهارم: معیارهای تشخیصی، تست پاترژی و پروتکل درمان بیماری بهجت</span>
+  </div>
+
+  <div class="subsection sub-blue">
+    <h4>۱. چالش‌های تشخیص و تست‌های آزمایشگاهی (اسلاید ۳۷)</h4>
+    <p>
+      برای بیماری بهجت هیچ‌گونه تست اختصاصی آزمایشگاهی یا یافته پاتوقنومونیک تصویربرداری وجود ندارد (<span class="tag tag-red">No specific laboratory or imaging features</span>). تشخیص بیماری تماماً بر اساس <strong>علائم و نشانه‌های بالینی (Clinical features)</strong> و <strong>رد سایر بیماری‌های تقلیدکننده (Ruling out other causes)</strong> گذاشته می‌شود.
+    </p>
+
+    <h4>۲. تست پاترژی (Pathergy Test) (اسلاید ۳۶)</h4>
+    <div class="infobox ib-yellow">
+      <span class="ib-icon">💉</span>
+      <div>
+        <strong>تعریف و روش انجام:</strong>
+        تست پاترژی نشان‌دهنده یک <strong>پاسخ بیش‌فعال و التهابی غیرطبیعی پوست (<span class="tag tag-yellow">Hyper-reactive reaction</span>)</strong> در پاسخ به ترومای مکانیکی سوزن است. پزشک با یک سوزن استریل (مثلاً گیج ۲۰ یا ۲۱) تزریق زیرجلدی یا اینترادرمال در پوست ساعد انجام می‌دهد و پوست را بین <strong>۲۴ الی ۴۸ ساعت بعد</strong> بازبینی می‌کند.
+      </div>
+    </div>
+    <ul class="list-styled">
+      <li><span class="li-content"><strong>نتیجه مثبت:</strong> ایجاد یک <strong>پاپول قرمز (بزرگ‌تر از ۲ میلی‌متر) یا پوسچول استریل (<span class="tag tag-red">Erythematous papule >2mm or pustule</span>)</strong> در محل ورود سوزن.</span></li>
+      <li><span class="li-content"><strong>ارزش بالینی:</strong> حساسیت تست در ایران و کشورهای جاده ابریشم حدود ۳۰ الی ۵۰ درصد است (یعنی منفی بودن آن بیماری را رد نمی‌کند)، اما در صورت مثبت شدن، <strong class="em3">اختصاصیت فوق‌العاده بالایی (Highly Specific)</strong> برای بهجت دارد.</span></li>
+    </ul>
+
+    <h4>۳. معیارهای تشخیصی بیماری بهجت (اسلایدهای ۳۵ الی ۴۰)</h4>
+    
+    <div class="grid2">
+      <div class="mini-card mc-blue">
+        <h5>۱. معیار بین‌المللی ISG (سال ۱۹۹۰) (اسلاید ۳۵)</h5>
+        <p><strong>وجود الزامی آفت دهانی عودکننده</strong> (حداقل ۳ بار در ۱۲ ماه) به همراه حداقل <strong>۲ مورد</strong> از ۴ مورد زیر:</p>
+        <ul class="list-styled blue">
+          <li><span class="li-content">آفت تناسلی راجعه</span></li>
+          <li><span class="li-content">ضایعات چشمی (یووئیت یا واسکولیت شبکیه)</span></li>
+          <li><span class="li-content">ضایعات پوستی (سودوفولیکولیت یا اریتما نودوزوم)</span></li>
+          <li><span class="li-content">تست پاترژی مثبت</span></li>
+        </ul>
+        <div class="infobox ib-red" style="margin:8px 0; padding:8px;">
+          <small><strong>ایراد این معیار در ایران:</strong> از آنجا که ۲۱٪ بیماران در شروع بیماری آفت دهانی ندارند، اتکای صرف به ISG باعث تأخیر در تشخیص یا Miss شدن بسیاری از بیماران می‌شود.</small>
+        </div>
+      </div>
+
+      <div class="mini-card mc-green">
+        <h5>۲. معیار اختصاصی کشور ایران (کمیته روماتولوژی ایران)</h5>
+        <p>بر اساس مطالعات بومی مرکز تحقیقات روماتولوژی دانشگاه تهران، ۳ تظاهر اصلی بیماری شامل:</p>
+        <ul class="list-styled green">
+          <li><span class="li-content">۱. آفت دهانی (Oral Aphthosis)</span></li>
+          <li><span class="li-content">۲. آفت تناسلی (Genital Aphthosis)</span></li>
+          <li><span class="li-content">۳. درگیری چشمی (Ocular Manifestations)</span></li>
+        </ul>
+        <p style="margin-top:6px;">
+          <strong class="em3">قانون تشخیصی ایران:</strong> وجود <strong>هر ۲ مورد از این ۳ تظاهر ماژور</strong> برای گذاشتن قطعی تشخیص بیماری بهجت کافی است و نیازی به صبر کردن برای بروز سایر علائم نیست. ضایعات پوستی و پاترژی به تنهایی کافی نبوده و باید همراه سایر علائم باشند.
+        </p>
+      </div>
+    </div>
+
+    <h4>۳. معیار بین‌المللی بازنگری‌شده ICBD (سال ۲۰۱۰/۲۰۱۴) (اسلایدهای ۳۹ و ۴۰)</h4>
+    <p>
+      این معیار توسط یک کنسرسیوم بین‌المللی با هدایت <strong>پروفسور فریدون دواچی (Davatchi et al.)</strong> در سال ۲۰۱۰ بازنگری و در مجلات معتبر JEADV و Clin Rheumatol منتشر شد. این کرایتری امتیازدهی وزنی داشته و دقت فوق‌العاده‌ای دارد:
+    </p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>تظاهر بالینی بیماری (Clinical Manifestation)</th>
+            <th>امتیاز اختصاص‌یافته (Points)</th>
+            <th>نکات و تعریف بالینی</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>آفت دهانی (Oral Aphthosis)</strong></td>
+            <td><strong class="em2">۲ امتیاز</strong></td>
+            <td>زخم‌های عودکننده تیپیک دهان</td>
+          </tr>
+          <tr>
+            <td><strong>آفت تناسلی (Genital Aphthosis)</strong></td>
+            <td><strong class="em2">۲ امتیاز</strong></td>
+            <td>زخم‌های تناسلی فعال یا اسکار قبلی آن</td>
+          </tr>
+          <tr>
+            <td><strong>ضایعات چشمی (Eye Lesions)</strong></td>
+            <td><strong class="em2">۲ امتیاز</strong></td>
+            <td>یووئیت قدامی، خلفی، رتینیت، واسکولیت رتین</td>
+          </tr>
+          <tr>
+            <td><strong>ضایعات پوستی (Skin Lesions)</strong></td>
+            <td>۱ امتیاز</td>
+            <td>سودوفولیکولیت (پاپولوپوستولار) یا اریتما نودوزوم</td>
+          </tr>
+          <tr>
+            <td><strong>ضایعات عروقی (Vascular Lesions)</strong></td>
+            <td>۱ امتیاز</td>
+            <td>فلبیت، ترومبوز وریدی، آنوریسم، انسداد شریانی</td>
+          </tr>
+          <tr>
+            <td><strong>تظاهرات نورولوژیک (Neurologic Manifestations)</strong></td>
+            <td>۱ امتیاز</td>
+            <td>درگیری پارانشیمال مغز، ساقه مغز یا ترومبوز سینوس‌ها</td>
+          </tr>
+          <tr>
+            <td><strong>پدیده پاترژی مثبت (Pathergy Phenomenon)</strong></td>
+            <td>۱ امتیاز</td>
+            <td>خواندن تست در ۲۴ الی ۴۸ ساعت بعد</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="infobox ib-green">
+      <span class="ib-icon">✅</span>
+      <div>
+        <strong>قاعده تصمیم‌گیری تشخیصی rICBD:</strong>
+        بیمار در صورتی که موفق به کسب <strong>۴ امتیاز یا بیشتر (Score ≥ 4 points)</strong> شود، به طور قطعی به عنوان <strong>مبتلا به بیماری بهجت</strong> طبقه‌بندی می‌گردد.
+        <br>
+        • <strong>حساسیت (Sensitivity): ۹۶٪</strong> | • <strong>اختصاصیت (Specificity): ۹۱.۲٪</strong> | • <strong>دقت تشخیصی (Accuracy): ۹۴.۵٪</strong>
+      </div>
+    </div>
+
+    <h4>۴. پروتکل‌های درمانی بهجت (اسلایدهای ۴۱ الی ۴۳)</h4>
+    <div class="grid2">
+      <div class="mini-card mc-blue">
+        <h5>درمان تظاهرات مخاطی-پوستی و مفصلی (Mild to Moderate)</h5>
+        <ul class="list-styled blue">
+          <li><span class="li-content"><strong>کلشیسین (Colchicine):</strong> خط اول پایه! با مهار کموتاکسی نوتروفیل‌ها و مهار میکروتوبول‌ها، در کنترل آفت‌های دهانی، تناسلی و ضایعات پوستی فوق‌العاده مؤثر است.</span></li>
+          <li><span class="li-content"><strong>ضدالتهاب‌های غیراستروئیدی (NSAIDs):</strong> داروی انتخابی در کنترل درد و آرتریت اولیگوآرتیکولار مفاصل.</span></li>
+          <li><span class="li-content"><strong>کورتیکواستروئیدهای موضعی (Local Topical Steroids):</strong> تریامسینولون داخل دهانی به صورت ژل یا خمیر و پمادهای استروئیدی برای آفت‌ها.</span></li>
+          <li><span class="li-content"><strong>لوامیزول (Levamisole):</strong> داروی ضد انگل با خواص تعدیل‌کننده سیستم ایمنی که در برخی موارد آفت‌های مقاوم کمک‌کننده است.</span></li>
+        </ul>
+      </div>
+
+      <div class="mini-card mc-red">
+        <h5>درمان تظاهرات خطیر و تهدیدکننده حیات (Severe / Organ Threatening)</h5>
+        <p><strong>ارگان‌های نیازمند درمان تهاجمی فوری:</strong> درگیری چشمی (یووئیت)، درگیری عروقی (واسکولیت شریانی/آنوریسم)، درگیری سیستم عصبی (نوروبهجت) و پرفوراسیون روده.</p>
+        <ul class="list-styled red" style="margin-top:8px;">
+          <li><span class="li-content"><strong class="em">نیازمند درمان تهاجمی سرکوبگر ایمنی (Need Aggressive Immunosuppressive Therapy)</strong>.</span></li>
+          <li><span class="li-content">پالس متیل‌پردنیزولون به همراه دوزهای بالای کورتیکواستروئید خوراکی.</span></li>
+          <li><span class="li-content"><strong>سیکلوفسفاماید (Cyclophosphamide)</strong> و <strong>آزاتیوپرین (Azathioprine)</strong> یا <strong>متوترکسات</strong>.</span></li>
+          <li><span class="li-content"><strong>مهارکننده‌های کلسینورین:</strong> سیکلوسپورین A در یووئیت شدید مقاوم.</span></li>
+          <li><span class="li-content"><strong>داروهای بیولوژیک ضد TNF:</strong> آنتی‌بادی‌های اینفلیکسی‌مب (Infliximab) یا ادالیمومب (Adalimumab) که امروزه نجات‌بخش بینایی بیماران هستند.</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 5: SJOGREN SYNDROME - OVERVIEW & CLINICAL -->
+  <div id="sec5" class="section-header sh-purple">
+    <div class="icon">💧</div>
+    <span>بخش پنجم: سندرم شوگرن (Sjögren Syndrome) – پاتوژنز و تظاهرات گلاندولار</span>
+  </div>
+
+  <div class="subsection sub-purple">
+    <h4>۱. تعریف، ماهیت بیماری و اپیدمیولوژی (اسلایدهای ۴۴ الی ۴۷)</h4>
+    <p>
+      سندرم شوگرن یک اختلال خودایمنی سیستمیک مزمن است که ویژگی بارز بیولوژیک آن شامل دو محور اصلی است:
+    </p>
+    <ul class="list-styled purple">
+      <li><span class="li-content"><strong>ارتشاح لنفوسیتی غدد برون‌ریز (<span class="tag tag-purple">Lymphocytic infiltration of exocrine glands</span>):</strong> غدد اشکی (<span class="tag tag-blue">Lacrimal</span>) و بزاقی (<span class="tag tag-teal">Salivary glands</span>) عمدتاً توسط لنفوسیت‌های T و سپس B اشغال شده و ساختار ترشحی آن‌ها تخریب و دچار اختلال عملکرد (<span class="tag tag-red">Glandular hypofunction</span>) می‌گردد.</span></li>
+      <li><span class="li-content"><strong>بیش‌فعالی لنفوسیت‌های B (<span class="tag tag-purple">B lymphocyte hyperactivity</span>):</strong> تولید بی‌رویه اتوآنتی‌بادی‌ها، هیپرگاماگلوبولینمی و افزایش شدید خطر ترانسفورماسیون بدخیم لنفوئیدی.</span></li>
+    </ul>
+
+    <div class="grid2">
+      <div class="mini-card mc-purple">
+        <h5>طبقه‌بندی و شیوع (اسلاید ۴۷)</h5>
+        <div class="kv-row"><span class="kv-key">شوگرن اولیه (Primary SS):</span><span class="kv-value">بیماری به صورت ایزوله و مستقل؛ شیوع در جمعیت عادی: <strong>۰.۵٪ الی ۱٪</strong>.</span></div>
+        <div class="kv-row"><span class="kv-key">شوگرن ثانویه (Secondary SS):</span><span class="kv-value">همراه با سایر بیماری‌های خودایمنی (به‌ویژه RA و SLE)؛ شیوع: <strong>۵٪ الی ۲۰٪</strong> از این بیماران.</span></div>
+      </div>
+
+      <div class="mini-card mc-blue">
+        <h5>دموگرافیک و جنسیتی (اسلاید ۴۶)</h5>
+        <div class="kv-row"><span class="kv-key">جمعیت هدف اصلی:</span><span class="kv-value"><strong>زنان میانسال (Middle-aged women)</strong>.</span></div>
+        <div class="kv-row"><span class="kv-key">نسبت زن به مرد:</span><span class="kv-value"><strong class="em4">۱۰:۱ تا ۲۰:۱</strong> (غالبیت مطلق زنان!).</span></div>
+        <div class="kv-row"><span class="kv-key">سن بروز:</span><span class="kv-value">گرچه در هر سنی (<span class="tag tag-blue">Occur at any age</span>) ممکن است رخ دهد، اما اوج شیوع در دهه‌های ۴ تا ۶ عمر است.</span></div>
+      </div>
+    </div>
+
+    <h4>۲. تظاهرات غددی اصلی (چشم و دهان) (اسلایدهای ۴۸ الی ۵۲)</h4>
+    
+    <div class="mini-card mc-blue" style="margin-bottom:15px;">
+      <h5>۱. خشکی چشم (Keratoconjunctivitis Sicca / Dry Eyes) (اسلایدهای ۴۸ و ۴۹)</h5>
+      <p>شایع‌ترین علامت درگیری غدد اشکی است. بیمار از <strong>احساس وجود شن‌ریزه در چشم (<span class="tag tag-blue">A sandy sensation</span>)</strong>، سوزش، قرمزی مداوم و خستگی زودرس چشم‌ها (<span class="tag tag-blue">Burning, redness, Eye fatigue</span>) شکایت دارد. در موارد شدید، خشکی طولانی‌مدت به <strong>ضایعات، خراشیدگی، اولسراسیون قرنیه، اسکار و عفونت‌های باکتریایی شدید چشم</strong> ختم می‌شود.</p>
+      <div class="grid2" style="margin-top:10px;">
+        <div style="background:white; padding:10px; border-radius:8px;">
+          <strong>تست شیرمر (Schirmer test):</strong> قرار دادن کاغذ فیلتر استریل در پلک تحتانی؛ خیس شدن <strong>کمتر یا مساوی ۵ میلی‌متر در عرض ۵ دقیقه</strong> در هر دو چشم نشانه قطعی کاهش ترشح اشک است.
+        </div>
+        <div style="background:white; padding:10px; border-radius:8px;">
+          <strong>رنگ‌آمیزی قرنیه با لیسامین گرین / فلورسئین:</strong> ارزیابی اروزیون‌ها و خراش‌های اپیتلیوم سطح چشم (<span class="tag tag-blue">Lissamine green staining</span>) با اسکور چشم‌پزشکی ≥ ۵.
+        </div>
+      </div>
+    </div>
+
+    <div class="mini-card mc-teal" style="margin-bottom:15px;">
+      <h5>۲. خشکی دهان (Xerostomia / Dry Mouth) (اسلایدهای ۵۰ و ۵۱)</h5>
+      <p>بیمار توانایی صحبت کردن متوالی و بدون وقفه را از دست می‌دهد (<span class="tag tag-teal">Inability to speak continuously</span>) و حین تکلم یا غذا خوردن مجبور به نوشیدن مکرر آب است. احساس سوزش زبان و مخاط دهان وجود دارد.</p>
+      <ul class="list-styled teal" style="margin-top:8px;">
+        <li><span class="li-content"><strong>معاینه فیزیکی بالینی:</strong> از بین رفتن حوضچه نرمال و طبیعی بزاق در کف دهان زیر زبان (<span class="tag tag-teal">Absence of a normal salivary pool under the tongue</span>).</span></li>
+        <li><span class="li-content"><strong>وضعیت مخاط:</strong> مخاط دهان خشک، مات، رنگ‌پریده و شدیداً چسبنده به دستکش معاینه‌کننده (<span class="tag tag-teal">Dry and sticky mucosa</span>).</span></li>
+        <li><span class="li-content"><strong>پوسیدگی‌های شدید دندان:</strong> بروز پوسیدگی‌های دندانی زودرس، منتشر و سرویکال (طوق دندان) (<span class="tag tag-red">Dental caries</span>) به علت فقدان آنزیم‌ها و ایمونوگلوبولین‌های محافظ بزاق.</span></li>
+        <li><span class="li-content"><strong class="em">سیالومتری بزاق تحریک‌نشده (Unstimulated Salivary Flow):</strong> خروج بزاق <strong>کمتر یا مساوی ۱.۵ میلی‌لیتر در عرض ۱۵ دقیقه</strong> (یا ≤ ۰.۱ mL/min).</span></li>
+      </ul>
+    </div>
+
+    <div class="mini-card mc-purple">
+      <h5>۳. بزرگی غدد بزاقی اصلی (Major Salivary Gland Enlargement) (اسلاید ۵۲)</h5>
+      <p>در <strong>دو سوم (۲/۳) بیماران شوگرن اولیه</strong> در طول سیر بیماری رخ می‌دهد. غدد پاروتید یا ساب‌مندیبولار بزرگ می‌شوند:</p>
+      <ul class="list-styled purple" style="margin-top:6px;">
+        <li><span class="li-content"><strong>ویژگی‌های بزرگی تیپیک شوگرن:</strong> کاملاً <strong>بدون درد (Painless)</strong>، ممکن است یک‌طرفه یا دوطرفه باشد، و معمولاً به صورت خودبه‌خودی ظرف <strong>۲ الی ۳ هفته</strong> فروکش می‌کند (<span class="tag tag-purple">Spontaneously resolves 2 to 3 w</span>).</span></li>
+        <li><span class="li-content"><strong class="em">زنگ خطر بدخیمی:</strong> اگر بزرگی پاروتید سفت، بدون درد، مداوم بوده و ظرف ۲-۳ هفته تحلیل نرود، نشانه اولیه بروز <strong class="em">لنفوم</strong> است و نیازمند بررسی سریع بیوپسی می‌باشد!</span></li>
+      </ul>
+    </div>
+
+    <h4>۳. درگیری سایر غدد برون‌ریز (Other Exocrine Glands) (اسلاید ۵۳)</h4>
+    <ul class="list-styled">
+      <li><span class="li-content"><strong>دستگاه تنفسی فوقانی و تحتانی:</strong> خشکی مخاط بینی، گلو و تراشه (<span class="tag tag-blue">Dry nose, throat, trachea</span>) منجر به سرفه خشک و مزمن (<span class="tag tag-blue">Dry cough</span>)، خشونت صدا و سینوزیت‌های راجعه و مقاوم می‌شود.</span></li>
+      <li><span class="li-content"><strong>دستگاه گوارش:</strong> خشکی مری و اختلال در تحرک مری، ایجاد دیسفاژی برای غذاهای خشک.</span></li>
+      <li><span class="li-content"><strong>دستگاه تناسلی زنان (External Genitalia):</strong> خشکی واژن و دیس‌پارونی شدید (درد هنگام مقاربت) (<span class="tag tag-purple">Vaginal dryness and dyspareunia</span>).</span></li>
+      <li><span class="li-content"><strong>پوست:</strong> خشکی سراسری پوست (<span class="tag tag-yellow">Dry skin / Xerosis</span>).</span></li>
+    </ul>
+  </div>
+
+  <!-- SECTION 6: SJOGREN EXTRAGLANDULAR, LYMPHOMA, LABS -->
+  <div id="sec6" class="section-header sh-red">
+    <div class="icon">⚠️</div>
+    <span>بخش ششم: تظاهرات اکستراگلاندولار شوگرن، ریسک لنفوم، غربالگری جنین و آزمایشات</span>
+  </div>
+
+  <div class="subsection sub-red">
+    <h4>۱. تظاهرات خارج غددی (Extraglandular Manifestations) (اسلایدهای ۵۴ و ۵۵)</h4>
+    <p>
+      در <strong>یک‌سوم (۱/۳) بیماران شوگرن</strong>، درگیری اعضای سیستمیک به وقوع می‌پیوندد:
+    </p>
+
+    <div class="grid2">
+      <div class="mini-card mc-blue">
+        <h5>مفاصل (Articular)</h5>
+        <p>اکثر بیماران با شوگرن اولیه حداقل یک حمله از <strong>آرتریت غیرفرسایشی (<span class="tag tag-blue">Non-erosive arthritis</span>)</strong> یا آرترالژی را تجربه می‌کنند. مفاصل کوچک دست و مچ دست به صورت قرینه درگیر می‌شوند، اما تخریب مفصلی یا دفورمیتی پایدار ایجاد نمی‌گردد.</p>
+      </div>
+      <div class="mini-card mc-teal">
+        <h5>ریه (Lung) و کلیه (Renal)</h5>
+        <p><strong>ریه:</strong> سرفه خشک مزمن و ایجاد <strong>پنومونیت اینترستیشیال (<span class="tag tag-teal">Interstitial pneumonitis / ILD</span>)</strong> که نیازمند درمان سیستمیک سنگین است.</p>
+        <p><strong>کلیه:</strong> <strong>نفریت اینترستیشیال (<span class="tag tag-teal">Interstitial nephritis</span>)</strong> که می‌تواند به اسیدوز توبولار کلیوی دیستال (نوع ۱)، هیپوکالمی و استئومالاسی ختم شود.</p>
+      </div>
+    </div>
+
+    <h4>۲. بدخیمی لنفوم: خطرناک‌ترین عارضه شوگرن (اسلاید ۵۶)</h4>
+    <div class="infobox ib-red">
+      <span class="ib-icon">🚨</span>
+      <div>
+        <strong>بالاترین خطر بروز لنفوم در بین تمامی بیماری‌های خودایمنی:</strong>
+        به علت بیش‌فعالی و تحریک مداوم کلون‌های لنفوسیت B، بیماران شوگرن دارای <strong>بالاترین خطر لنفوم در بین تمام بیماری‌های خودایمنی (<span class="tag tag-red">Highest risk among all autoimmune diseases</span>)</strong> هستند (تا ۴۴ برابر جمعیت عادی و در حدود ۴٪ کل بیماران). شایع‌ترین نوع آن، لنفوم لنفوسیت B از نوع MALT و سپس DLBCL است.
+      </div>
+    </div>
+
+    <div class="mini-card mc-red">
+      <h5>نشانه‌ها و علائم هشداردهنده بالینی برای بروز لنفوم (اسلاید ۵۶)</h5>
+      <ul class="list-styled red">
+        <li><span class="li-content"><strong>پورپورا و واسکولیت پوستی (<span class="tag tag-red">Purpura</span>):</strong> ناشی از رسوب کرایوگلوبولین در عروق اندام‌های تحتانی.</span></li>
+        <li><span class="li-content"><strong>علائم سیستمیک و ساختاری (Constitutional features):</strong> تب پایدار، تعریق شبانه، کاهش وزن بدون علت.</span></li>
+        <li><span class="li-content"><strong>بزرگی پایدار غده پاروتید (<span class="tag tag-red">Persistent parotid enlargement</span>):</strong> عدم بهبود تورم پاروتید پس از ۲-۳ هفته.</span></li>
+        <li><span class="li-content"><strong>آتروفی مخاط زبان (<span class="tag tag-red">Tongue atrophy</span>):</strong> ناپدید شدن پرزهای زبان.</span></li>
+        <li><span class="li-content"><strong>افت کمپلمان C4 خون (<span class="tag tag-red">Low C4</span>):</strong> نشانه مصرف کمپلمان در زمینه کرایوگلوبولینمی و فعال‌شدن کلون لنفومی.</span></li>
+        <li><span class="li-content"><strong>مثبت بودن توأم آنتی‌بادی‌ها:</strong> تیترهای بسیار بالای <strong class="em">Anti-Ro، Anti-La و Rheumatoid Factor (RF)</strong>.</span></li>
+      </ul>
+    </div>
+
+    <h4>۳. بیماری لوپوس نوزادی و بلوک قلبی جنین (اسلاید ۵۷)</h4>
+    <div class="infobox ib-purple">
+      <span class="ib-icon">👶</span>
+      <div>
+        <strong>انتقال جفتی آنتی‌بادی‌های مادری (<span class="tag tag-purple">Neonatal disease</span>):</strong>
+        در زنان مبتلا به سندرم شوگرن که قصد بارداری دارند، آنتی‌بادی‌های <strong>Anti-Ro (SSA)</strong> و <strong>Anti-La (SSB)</strong> از سد جفت عبور کرده و وارد جریان خون جنین می‌شوند. این اتوآنتی‌بادی‌ها به سیستم هدایتی قلب جنین متصل شده و باعث فیبروز گره AV و ایجاد <strong class="em">بلوک مادرزادی کامل قلب (Congenital Complete Heart Block)</strong> می‌گردند.
+      </div>
+    </div>
+    <ul class="list-styled purple">
+      <li><span class="li-content"><strong>پروتکل غربالگری مادر:</strong> تمام مادران باردار مبتلا به شوگرن باید از نظر سطوح سرمی Anti-Ro و Anti-La آزمایش شوند.</span></li>
+      <li><span class="li-content"><strong>مانیتورینگ اکوکاردیوگرافی جنین:</strong> در مادران مثبت، پایش دقیق اکوی قلب جنین به صورت هفتگی یا دوهفته‌یک‌بار بین <strong>هفته‌های ۱۶ تا ۲۴ بارداری</strong> جهت تشخیص زودهنگام برادی‌کاردی و مداخله درمانی حیاتی است. خطر در بارداری اول ۲٪ است، ولی اگر سابقه نوزاد مبتلا وجود داشته باشد، در بارداری‌های بعدی به ۱۵ الی ۲۰ درصد افزایش می‌یابد.</span></li>
+    </ul>
+
+    <h4>۴. یافته‌های آزمایشگاهی و سرولوژی (اسلایدهای ۵۸ و ۵۹)</h4>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>تست پاراکلینیک</th>
+            <th>میزان مثبت‌شدن / شیوع در بیماران</th>
+            <th>اهمیت و ویژگی‌های تفسیری بالینی</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>ANA (Anti-Nuclear Antibody)</strong></td>
+            <td><strong>تا ۸۰٪ بیماران (Up to 80%)</strong></td>
+            <td>مارکر حساسیت‌بالای غیر‌اختصاصی خودایمنی؛ نمای پترن speckled.</td>
+          </tr>
+          <tr>
+            <td><strong>Anti-Ro / SSA</strong></td>
+            <td><strong class="em2">۶۰٪ تا ۸۰٪</strong></td>
+            <td>بسیار اختصاصی و کلیدی؛ گنجانده‌شده در معیارهای ACR/EULAR (۳ امتیاز).</td>
+          </tr>
+          <tr>
+            <td><strong>Anti-La / SSB</strong></td>
+            <td><strong>۳۰٪ تا ۴۰٪</strong></td>
+            <td>معمولاً همراه با Anti-Ro مثبت می‌شود؛ به تنهایی نادر است.</td>
+          </tr>
+          <tr>
+            <td><strong>RF (Rheumatoid Factor)</strong></td>
+            <td><strong>تا ۵۰٪ بیماران (Up to 50%)</strong></td>
+            <td>حتی در غیاب آرتریت روماتوئید، به علت بیش‌فعالی لنفوسیت B مثبت است.</td>
+          </tr>
+          <tr>
+            <td><strong>سرعت ته‌نشینی (ESR)</strong></td>
+            <td><strong>شدیداً افزایش‌یافته (High ESR)</strong></td>
+            <td>حاصل هیپرگاماگلوبولینمی و التهاب مزمن سیستمیک.</td>
+          </tr>
+          <tr>
+            <td><strong>شمارش سلول‌های خون (CBC)</strong></td>
+            <td>آنمی، لکوپنی، لنفوپنی، نوتروپنی، ترومبوسیتوپنی</td>
+            <td>آنمی معمولاً از نوع <strong>بیماری مزمن (نرموسیتیک نرموکرومیک)</strong> است؛ سایتوپنی‌ها به دلیل فعالیت خودایمنی یا هایپراسپلنیسم بروز می‌کند.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- SECTION 7: SJOGREN PATHOLOGY, CRITERIA & TREATMENT -->
+  <div id="sec7" class="section-header sh-teal">
+    <div class="icon">🔬</div>
+    <span>بخش هفتم: پاتولوژی بیوپسی لب، معیارهای ACR/EULAR 2016، تشخیص افتراقی و درمان شوگرن</span>
+  </div>
+
+  <div class="subsection sub-teal">
+    <h4>۱. پاتولوژی و بیوپسی غدد بزاقی فرعی لب تحتانی (اسلاید ۶۰)</h4>
+    <div class="infobox ib-teal">
+      <span class="ib-icon">🔬</span>
+      <div>
+        <strong>استاندارد طلایی تهاجمی (Hallmark of Pathology):</strong>
+        بیوپسی از مخاط دهان و غدد بزاقی ماینر لب تحتانی (<span class="tag tag-teal">Biopsy from lower lip salivary glands</span>) انجام می‌شود. پاتولوژیست لام را برای مشاهده <strong>سیالادنیت لنفوسیتی فوکال (<span class="tag tag-teal">Focal Lymphocytic Sialadenitis - FLS</span>)</strong> بررسی می‌کند.
+      </div>
+    </div>
+    <ul class="list-styled teal">
+      <li><span class="li-content"><strong>تعریف فوکوس (Focus):</strong> یک فوکوس عبارت است از تجمع متراکم <strong>۵۰ عدد یا بیشتر از سلول‌های لنفوسیت</strong> در اطراف مجاری ترشحی و آسینی‌های غده (<span class="tag tag-teal">Foci of 50 or more lymphocytes cluster</span>).</span></li>
+      <li><span class="li-content"><strong class="em3">اسکور فوکوس مثبت (Focus Score):</strong> گزارش <strong>یک یا تعداد بیشتری فوکوس در هر ۴ میلی‌متر مربع بافت غده</strong> (Focus score ≥ 1 per 4 mm²). این یافته در معیارهای بین‌المللی ۳ امتیاز تشخیصی دارد.</span></li>
+    </ul>
+
+    <h4>۲. معیارهای طبقه‌بندی ACR/EULAR 2016 برای سندرم شوگرن اولیه (اسلاید ۶۱)</h4>
+    <p>
+      معیارهای جدید ACR/EULAR بر اساس جمع امتیازات وزنی طراحی شده و دقت تشخیصی بسیار بالایی دارد:
+    </p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>مورد / تست ارزیابی‌شده (Item)</th>
+            <th>معیار کمی مثبت‌شدن</th>
+            <th>امتیاز (Score)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>بیوپسی غدد بزاقی لب (Labial Salivary Gland)</strong></td>
+            <td>سیالادنیت لنفوسیتی فوکال با <strong>Focus score ≥ 1 foci / 4 mm²</strong></td>
+            <td><strong class="em">۳ امتیاز</strong></td>
+          </tr>
+          <tr>
+            <td><strong>آنتی‌بادی سرمی ضد SSA / Anti-Ro</strong></td>
+            <td>تست سرولوژی مثبت برای <strong>Positive anti-SSA/Ro</strong></td>
+            <td><strong class="em">۳ امتیاز</strong></td>
+          </tr>
+          <tr>
+            <td><strong>رنگ‌آمیزی سطح چشم (Ocular Staining)</strong></td>
+            <td>اسکور رنگ‌آمیزی چشمی <strong>OSS ≥ 5</strong> (یا اسکور ون بیستِروِلد ≥ ۴) در هر چشم</td>
+            <td><strong>۱ امتیاز</strong></td>
+          </tr>
+          <tr>
+            <td><strong>تست شیرمر (Schirmer test)</strong></td>
+            <td>خیس‌شدن کاغذ <strong>≤ 5 mm / 5 min</strong> در حداقل یک چشم</td>
+            <td><strong>۱ امتیاز</strong></td>
+          </tr>
+          <tr>
+            <td><strong>سرعت جریان بزاق تحریک‌نشده (UWSF)</strong></td>
+            <td>نرخ بزاق تام تحریک‌نشده <strong>≤ 0.1 mL/min</strong></td>
+            <td><strong>۱ امتیاز</strong></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="infobox ib-green">
+      <span class="ib-icon">⭐</span>
+      <div>
+        <strong>شرط تشخیصی قطعی:</strong> کسب <strong>امتیاز مساوی یا بزرگ‌تر از ۴ (Score ≥ 4 points)</strong> بیمار را به عنوان <strong>مبتلا به سندرم شوگرن اولیه (Primary SS)</strong> طبقه‌بندی می‌کند.
+      </div>
+    </div>
+
+    <h4>۳. تشخیص‌های افتراقی سندرم شوگرن (اسلاید ۶۲)</h4>
+    <div class="mini-card mc-orange">
+      <h5>بیماری‌ها و عواملی که علائم مشابه (خشکی چشم و دهان و بزرگی غدد) ایجاد می‌کنند و باید رد شوند:</h5>
+      <ul class="list-styled orange">
+        <li><span class="li-content"><strong>عفونت‌های ویروسی مزمن:</strong> هپاتیت C (<span class="tag tag-orange">HCV</span>) (می‌تواند سندرم سیکا و واسکولیت تقلید کند)، هپاتیت B (<span class="tag tag-orange">HBV</span>) و ویروس ایدز (<span class="tag tag-orange">HIV / DILS syndrome</span>).</span></li>
+        <li><span class="li-content"><strong>بیماری‌های گرانولوماتوز و ارتشاحی:</strong> سارکوئیدوز (<span class="tag tag-orange">Sarcoidosis</span>) و آمیلوئیدوز (<span class="tag tag-orange">Amyloidosis</span>) با درگیری و بزرگی غدد پاروتید و خشکی مخاطات.</span></li>
+        <li><span class="li-content"><strong class="em">عوارض جانبی داروها (بسیار شایع در جامعه):</strong> داروهای ضدافسردگی سه‌حلقه‌ای (<span class="tag tag-orange">Antidepressants</span>)، آنتی‌هیستامین‌ها و دکونژستانت‌ها (<span class="tag tag-orange">Decongestants</span>)، و داروهای دیورتیک و ضد فشارخون (<span class="tag tag-orange">Antihypertensives</span>) که خاصیت آنتی‌کولینرژیک دارند.</span></li>
+        <li><span class="li-content"><strong>سابقه پرتودرمانی سر و گردن (<span class="tag tag-orange">History of head and neck radiation</span>):</strong> فیبروز و تخریب غدد در اثر رادیوتراپی قبلی.</span></li>
+        <li><span class="li-content"><strong>بیماری مرتبط با IgG4 (<span class="tag tag-red">IgG4-related disease</span>):</strong> مهم‌ترین تقلیدکننده شوگرن با درگیری غدد پاروتید و اشکی که در بخش بعدی بررسی می‌شود.</span></li>
+      </ul>
+    </div>
+
+    <h4>۴. درمان و مدیریت بالینی سندرم شوگرن (اسلایدهای ۶۳ الی ۶۶ و ۷۸)</h4>
+    <p>
+      هدف غایی از درمان شوگرن بر دو پایه استوار است: <strong>۱. تسکین علائم سیکا و ارتقای کیفیت زندگی بیمار</strong> و <strong>۲. جلوگیری از عوارض دائمی و آسیب ارگان‌ها</strong> (نظیر سوراخ‌شدگی قرنیه یا فیبروز ریه).
+    </p>
+
+    <div class="grid2">
+      <div class="mini-card mc-blue">
+        <h5>۱. درمان خشکی چشم (Dry Eye) (اسلاید ۶۴)</h5>
+        <ul class="list-styled blue">
+          <li><span class="li-content">پرهیز از محیط‌های خشک، دارای باد و دود سیگار.</span></li>
+          <li><span class="li-content">استفاده مکرر از <strong>اشک مصنوعی بدون ماده نگه‌دارنده و ژل‌های چرب‌کننده چشمی</strong> هنگام خواب.</span></li>
+          <li><span class="li-content"><strong>قطره سیکلوسپورین موضعی (<span class="tag tag-blue">Topical Cyclosporine / Restasis</span>):</strong> مهار التهاب موضعی لنفوسیت‌ها در غدد اشکی.</span></li>
+          <li><span class="li-content"><strong>بستن مجرای اشکی با پلاک (<span class="tag tag-blue">Tear drainage duct plugging / Punctal plugs</span>):</strong> انسداد مجاری تخلیه اشک جهت ماندگاری بیشتر اشک طبیعی بر روی قرنیه.</span></li>
+        </ul>
+      </div>
+
+      <div class="mini-card mc-teal">
+        <h5>۲. درمان خشکی دهان (Dry Mouth) (اسلاید ۶۵)</h5>
+        <ul class="list-styled teal">
+          <li><span class="li-content">قطع یا جایگزینی داروهای با اثرات آنتی‌کولینرژیک.</span></li>
+          <li><span class="li-content">رعایت بهداشت کامل دهان، فلورایدتراپی منظم و مسواک پس از هر وعده.</span></li>
+          <li><span class="li-content">تحریک ترشح بزاق با <strong>آدامس‌های بدون قند، شکلات‌های ترش و لیمو</strong>.</span></li>
+          <li><span class="li-content"><strong>آگونیست‌های کولینرژیک خوراکی (سیالوگوگ‌ها):</strong> داروی <strong>پیلوکارپین (Pilocarpine - ۵ میلی‌گرم ۳ الی ۴ بار در روز)</strong> یا <strong>سویمیلین (Cevimeline - ۳۰ میلی‌گرم ۳ بار در روز)</strong> جهت افزایش ترشح اشک و بزاق.</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mini-card mc-purple" style="margin-top:14px;">
+      <h5>۳. درمان تظاهرات خارج غددی و سیستمیک (اسلاید ۶۶)</h5>
+      <ul class="list-styled purple">
+        <li><span class="li-content"><strong>هیدروکسی‌کلروکین (Hydroxychloroquine - HCQ):</strong> داروی انتخابی خط اول در کنترل <strong>آرترالژی، درگیری‌های مفصلی، راش‌های پوستی و خستگی مفرط (Fatigue)</strong>.</span></li>
+        <li><span class="li-content"><strong class="em">سیکلوفسفاماید و ریتوکسیمب (Cyclophosphamide and Rituximab):</strong> در تظاهرات شدید احشایی و ارگان‌های حیاتی (<span class="tag tag-red">Severe body organ involvement</span>) نظیر واسکولیت کرایوگلوبولینمیک، درگیری بینابینی شدید ریه (ILD) یا گلومرولونفریت کلیوی تجویز می‌شوند.</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- SECTION 8: IGG4-RELATED DISEASE -->
+  <div id="sec8" class="section-header sh-orange">
+    <div class="icon">🛡️</div>
+    <span>بخش هشتم: بیماری مرتبط با IgG4 (IgG4-Related Disease) – مفاهیم و درگیری اعضا</span>
+  </div>
+
+  <div class="subsection sub-orange">
+    <h4>۱. ماهیت بیماری و دانشمندان پیشگام (اسلایدهای ۶۷ الی ۷۰)</h4>
+    <div class="infobox ib-yellow">
+      <span class="ib-icon">👩‍⚕️</span>
+      <div>
+        <strong>افتخار علمی بین‌المللی:</strong>
+        یکی از دانشمندان و محققان برجسته جهانی که نقش ارزنده‌ای در کشف، معرفی و تدوین کرایتریای بین‌المللی بیماری مرتبط با IgG4 در دانشگاه اموری و هاروارد داشته است، <strong>پروفسور آرزو خسروشاهی (Dr. Arezou Khosroshahi)</strong> از روماتولوژیست‌های برجسته ایرانی‌تبار است که اسلاید ۶۸ به احترام پژوهش‌های ایشان اختصاص یافته است.
+      </div>
+    </div>
+
+    <div class="grid2">
+      <div class="mini-card mc-orange">
+        <h5>تعریف پاتوفیزیولوژیک (اسلاید ۶۹)</h5>
+        <ul class="list-styled orange">
+          <li><span class="li-content">یک بیماری <strong>فیبرو‌التهابی سیستمیک مزمن (<span class="tag tag-orange">Fibroinflammatory condition</span>)</strong> با درگیری چندارگانی.</span></li>
+          <li><span class="li-content">تمایل بسیار شدید به تشکیل <strong>ضایعات توده‌مانند و سودوتومور (<span class="tag tag-red">Tendency to form tumefactive lesions</span>)</strong> که شبیه نئوپلاسم‌های بدخیم بوده و ایجاد اثر فشاری می‌کنند.</span></li>
+          <li><span class="li-content">سیر بیماری عمدتاً <strong>تحت حاد (Subacute)</strong> بوده و علائم در طول ماه‌ها یا سال‌ها به آرامی مستقر می‌شوند.</span></li>
+        </ul>
+      </div>
+
+      <div class="mini-card mc-blue">
+        <h5>اپیدمیولوژی متمایزکننده (اسلاید ۶۸)</h5>
+        <div class="kv-row"><span class="kv-key">گروه هدف اصلی:</span><span class="kv-value"><strong class="em">مردان میانسال تا مسن (Middle-aged to elderly man)</strong>.</span></div>
+        <div class="kv-row"><span class="kv-key">تفاوت با سایر بیماری‌ها:</span><span class="kv-value">برخلاف لوپوس و شوگرن که در زنان بسیار شایع‌اند، این بیماری در آقایان غلبه دارد.</span></div>
+        <div class="kv-row"><span class="kv-key">ویژگی بالینی همراه:</span><span class="kv-value">سابقه آلرژی، آسم، رینیت آلرژیک و اگزیما در درصد بالایی از این بیماران وجود دارد.</span></div>
+      </div>
+    </div>
+
+    <h4>۲. دو ویژگی بنیادین بالینی بیماری IgG4-RD (اسلاید ۷۴)</h4>
+    <div class="grid2">
+      <div class="mini-card mc-red">
+        <h5>۱. بیماری‌های آلرژیک (Allergic Disease)</h5>
+        <p>اکثر بیماران شرح حالی از رینوسینوزیت آلرژیک، آسم برونشیال، پولیپ بینی، کهیر و افزایش سطح سرمی IgE یا ائوزینوفیلی خونی دارند.</p>
+      </div>
+      <div class="mini-card mc-purple">
+        <h5>۲. ضایعات تومورمانند مقلد بدخیمی (Tumefactive Lesions)</h5>
+        <p>ایجاد توده‌های فیبروتیک و سودوتومور در هر عضوی از بدن که در گرافی‌ها و بیوپسی اولیه اغلب با سرطان‌ها و تومورهای بدخیم اشتباه گرفته می‌شوند (<span class="tag tag-red">Mimic malignancies</span>).</p>
+      </div>
+    </div>
+
+    <h4>۳. تظاهرات درگیری ارگان‌های مختلف (اسلایدهای ۷۱ الی ۷۳)</h4>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>ارگان هدف</th>
+            <th>تظاهرات بالینی و آسیب‌شناسی</th>
+            <th>نکات و تشخیص‌های افتراقی مهم</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>حلقه چشم و بافت پری‌اوربیتال (Orbits) (اسلاید ۷۱)</strong></td>
+            <td>تورم بدون درد پلک‌ها و بافت‌های دور چشم (<span class="tag tag-blue">Painless eyelid swelling</span>)، سودوتومور کاسه چشم (<span class="tag tag-blue">Orbital pseudotumor</span>)، اگزوفتالمی و پروپتوز یک‌طرفه یا دوطرفه.</td>
+            <td>باید از تومورهای رترواوربیتال و بیماری چشمی گریوز افتراق داده شود.</td>
+          </tr>
+          <tr>
+            <td><strong>غدد بزاقی و اشکی (Salivary Glands) (اسلاید ۷۲)</strong></td>
+            <td>بزرگی پایدار، سفت و قرینه غدد زیرفکی (ساب‌مندیبولار) و غدد پاروتید (<span class="tag tag-teal">Submandibular / Parotid gland enlargement</span>).</td>
+            <td>در گذشته به نام <em>تومور کوتنر (Küttner's tumor)</em> یا <em>سندرم میکولیچ</em> خوانده می‌شد؛ مهم‌ترین مقلد سندرم شوگرن.</td>
+          </tr>
+          <tr>
+            <td><strong>لوزالمعده و درخت صفراوی (Pancreas & Biliary) (اسلاید ۷۳)</strong></td>
+            <td><strong>پانکراتیت خودایمنی نوع ۱ (<span class="tag tag-orange">Autoimmune Pancreatitis - AIP</span>)</strong> با نمای پانکراس شبیه سوسیس، و کلانژیت اسکلروزان IgG4.</td>
+            <td>تقلیدکننده کامل <strong>کانسر پانکراس</strong> و کلانژیوکارسینوما یا کلانژیت اسکلروزان اولیه (<span class="tag tag-red">Mimicker of PSC & Cholangiocarcinoma</span>).</td>
+          </tr>
+          <tr>
+            <td><strong>کلیه‌ها (Kidneys) (اسلاید ۷۱)</strong></td>
+            <td><strong>نفریت توبولواینترستیشیال (<span class="tag tag-blue">Tubulointerstitial nephritis</span>)</strong> با کاهش عملکرد کلیه و آتروفی کلیوی؛ ندرتاً گلومرولونفریت ممبرانوس (<span class="tag tag-blue">Membranous GN</span>).</td>
+            <td>علت مهم نارسایی کلیه بدون علت توجیه‌کننده در مردان مسن.</td>
+          </tr>
+          <tr>
+            <td><strong>ریه‌ها و پلور (Lungs) (اسلاید ۷۲)</strong></td>
+            <td>از فرم بدون علامت تا سرفه، هموپتیزی، تنگی‌نفس، افیوژن پلور، سودوتومور ریوی و پنومونی بینابینی (<span class="tag tag-purple">Interstitial pneumonia</span>).</td>
+            <td>ضایعات ریوی در CT اسکن کاملاً شبیه نئوپلاسم برونکوژنیک ریه است.</td>
+          </tr>
+          <tr>
+            <td><strong>فضای پشت صفاق (Retroperitoneum) (اسلاید ۷۳)</strong></td>
+            <td><strong>فیبروز رتروپریتوئن (<span class="tag tag-red">Retroperitoneal Fibrosis / Ormond's disease</span>)</strong> و پریاورتیت جدار آئورت.</td>
+            <td>پلاک‌های فیبروتیک به دور حالب‌ها پیچیده و منجر به هیدرونفروز حاد، انسداد ادراری و نارسایی حاد انسدادی کلیه می‌شوند.</td>
+          </tr>
+          <tr>
+            <td><strong>سیستم لنفاوی (Lymph Nodes) (اسلاید ۷۱)</strong></td>
+            <td><strong>لنفادنوپاتی ژنرالیزه بدون درد (<span class="tag tag-teal">Generalized lymphadenopathy</span>)</strong> در مدیاستن، شکم و گردن.</td>
+            <td>در اغلب موارد نیازمند درمان اختصاصی فوری نبوده و تنها پایش می‌شود.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- SECTION 9: IGG4 DIAGNOSIS & TREATMENT -->
+  <div id="sec9" class="section-header sh-orange">
+    <div class="icon">🧪</div>
+    <span>بخش نهم: یافته‌های سرولوژی، آسیب‌شناسی بافتی و درمان IgG4-RD</span>
+  </div>
+
+  <div class="subsection sub-orange">
+    <h4>۱. سرولوژی IgG4 و چالش‌های آن (اسلاید ۷۵)</h4>
+    <div class="infobox ib-yellow">
+      <span class="ib-icon">⚠️</span>
+      <div>
+        <strong>نکته تله آزمون و کلینیک:</strong>
+        گرچه انتظار می‌رود سطح سرمی ایمونوگلوبولین IgG4 در این بیماری بالا باشد (<span class="tag tag-yellow">Elevated serum IgG4</span>)، اما به خاطر بسپارید که <strong>در ۳۰٪ بیماران مبتلا، سطح IgG4 سرم کاملاً طبیعی است! (<span class="tag tag-red">30% of patients: Normal</span>)</strong>. بنابراین، نرمال بودن تیتر IgG4 هرگز ردکننده بیماری نیست و تشخیص قطعی حتماً نیازمند <strong>بیوپسی بافتی</strong> است.
+      </div>
+    </div>
+
+    <h4>۲. مشخصات پاتولوژی بافت در بیوپسی (اسلاید ۷۶)</h4>
+    <p>
+      نمای میکروسکوپی در بافت بیوپسی دارای ۴ ویژگی تیپیک است که پاتولوژیست را به تشخیص می‌رساند:
+    </p>
+
+    <div class="grid2">
+      <div class="mini-card mc-purple">
+        <h5>۱. ارتشاح متراکم لنفوپلاسموسیتیک</h5>
+        <p>حضور فراوان و متراکم پلاسماسل‌های ترشح‌کننده IgG4 و لنفوسیت‌ها در بافت درگیر (<span class="tag tag-purple">Lymphoplasmacytic infiltrate</span>) با نسبت IgG4+/IgG+ بالای ۴۰ درصد.</p>
+      </div>
+
+      <div class="mini-card mc-orange">
+        <h5>۲. الگوی فیبروز چرخشی یا استوریفرم</h5>
+        <p><strong>الگوی استوریفرم (<span class="tag tag-orange">Storiform pattern</span>):</strong> رشته‌های کلاژن به صورت دوکی، گردبادی یا چرخ گاری (شبیه اثرات وزش باد بر ماسه‌های کویر) در هم تنیده شده‌اند.</p>
+      </div>
+
+      <div class="mini-card mc-red">
+        <h5>۳. فلبیت انسدادی (Obliterative Phlebitis)</h5>
+        <p>تهاجم سلول‌های التهابی به جدار وریدها و بسته شدن کامل لومن وریدها (<span class="tag tag-red">Target vessels, particularly veins</span>) در حالی که شریان‌های مجاور سالم می‌مانند.</p>
+      </div>
+
+      <div class="mini-card mc-green">
+        <h5>۴. ائوزینوفیلی بافتی</h5>
+        <p>حضور ارتشاح خفیف تا متوسط سلول‌های ائوزینوفیل (<span class="tag tag-green">Mild to moderate tissue eosinophilia</span>) در بستر بافت فیبروزه به علت زمینه آتوپی.</p>
+      </div>
+    </div>
+
+    <h4>۳. رویکرد درمانی بیماری IgG4-RD (اسلاید ۷۷)</h4>
+    <ul class="list-styled orange">
+      <li><span class="li-content"><strong>تظاهرات بدون علامت:</strong> تمام تظاهرات نیازمند مداخله فوری نیستند؛ به عنوان مثال <strong>لنفادنوپاتی ایزوله بدون علامت (<span class="tag tag-teal">Lymphadenopathy</span>)</strong> می‌تواند بدون درمان دارویی تحت نظر قرار گیرد.</span></li>
+      <li><span class="li-content"><strong class="em">خط اول درمان دارویی: کورتیکواستروئیدها (<span class="tag tag-green">First line: Glucocorticoids</span>)</strong>. پردنیزولون با دوز ۰.۶ میلی‌گرم به ازای هر کیلوگرم وزن بدن. پاسخ به استروئید فوق‌العاده سریع و چشمگیر است به گونه‌ای که پس‌رفت سریع توده‌ها ظرف چند هفته، خود تأییدکننده تشخیص است.</span></li>
+      <li><span class="li-content"><strong class="em4">خط دوم درمان دارویی: ریتوکسیمب (<span class="tag tag-purple">Second line: Rituximab</span>)</strong>. داروی بیولوژیک تخلیه‌کننده B-cell (ضد CD20)؛ در موارد عود پس از قطع کورتون، عدم تحمل کورتون، یا توده‌های مقاوم ریتروپریتوئن داروی انتخابی و بسیار مؤثر است.</span></li>
+    </ul>
+  </div>
+
+  <!-- SECTION 10: RELAPSING POLYCHONDRITIS -->
+  <div id="sec10" class="section-header sh-red">
+    <div class="icon">👂</div>
+    <span>بخش دهم: پلی‌کندریت راجعه (Relapsing Polychondritis - اسلایدهای ۷۹ الی ۸۸)</span>
+  </div>
+
+  <div class="subsection sub-red">
+    <div class="infobox ib-purple">
+      <span class="ib-icon">ℹ️</span>
+      <div>
+        <strong>پوشش کامل اسلایدهای کلاسی استاد:</strong>
+        در انتهای فایل صوتی، استاد محترم اشاره فرمودند که با توجه به ندرت شدید بیماری پلی‌کندریت راجعه، تدریس شفاهی آن ممکن است در کلاس کوتاه شود؛ با این حال از آنجا که <strong>اسلایدهای ۷۹ الی ۸۸</strong> تمام جزئیات این بیماری را ارائه داده‌اند، جهت جامعیت درسنامه، تمامی نکات اسلایدها و پروتکل‌های آن در ادامه به دقت تدوین شده است.
+      </div>
+    </div>
+
+    <h4>۱. تعریف، ماهیت بافتی و اپیدمیولوژی (اسلایدهای ۷۹ الی ۸۱)</h4>
+    <p>
+      پلی‌کندریت راجعه (<span class="tag tag-red">Relapsing Polychondritis - RP</span>) یک اختلال نادر التهابی سیستمیک عودکننده است که مشخصه آن تخریب پیشرونده ساختارهای غضروفی بدن به ویژه <strong>غضروف‌های هیالن و الاستیک (<span class="tag tag-red">Hyaline and elastic cartilage</span>)</strong> می‌باشد. اندام‌های هدف اصلی شامل <strong>لاله گوش‌ها، تیغه بینی، و درخت حنجره‌ای-تراکئوبرونکیال</strong> هستند.
+    </p>
+
+    <div class="grid2">
+      <div class="mini-card mc-blue">
+        <h5>اپیدمیولوژی بیماری (اسلاید ۸۱)</h5>
+        <div class="kv-row"><span class="kv-key">پیک سنی بروز:</span><span class="kv-value"><strong>۴۰ تا ۵۰ سالگی</strong>.</span></div>
+        <div class="kv-row"><span class="kv-key">نسبت جنسیتی:</span><span class="kv-value"><strong>زن و مرد به طور برابر (<span class="tag tag-blue">Sex: equally</span>)</strong> مبتلا می‌شوند.</span></div>
+        <div class="kv-row"><span class="kv-key">میزان بروز جهانی:</span><span class="kv-value"><strong>۳.۵ مورد در هر یک میلیون نفر در سال</strong> (بسیار نادر).</span></div>
+        <div class="kv-row"><span class="kv-key">همراهی با سایر بیماری‌ها:</span><span class="kv-value">در <strong>۳۰٪ بیماران</strong>، یک بیماری خودایمنی دیگر (مانند RA، لوپوس، واگنر یا سندرم میلودیسپلاستیک) همراه است.</span></div>
+      </div>
+
+      <div class="mini-card mc-red">
+        <h5>ویژگی شروع بیماری (اسلاید ۸۲)</h5>
+        <ul class="list-styled red">
+          <li><span class="li-content"><strong>شروع حملات:</strong> ناگهانی و حاد (<span class="tag tag-red">Onset: abrupt</span>).</span></li>
+          <li><span class="li-content"><strong>علائم عمومی و سیستمیک:</strong> همراه با ویژگی‌های التهابی فراگیر نظیر تب، ضعف و بی‌حالی شدید (<span class="tag tag-red">Systemic inflammatory features</span>).</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <h4>۲. تظاهرات بالینی اختصاصی (اسلایدهای ۸۳ الی ۸۶)</h4>
+    
+    <div class="mini-card mc-red" style="margin-bottom:14px;">
+      <h5>۱. کندریت لاله گوش (Auricular Chondritis) (اسلاید ۸۳)</h5>
+      <ul class="list-styled red">
+        <li><span class="li-content"><strong class="em">شایع‌ترین علامت اولیه بیماری (<span class="tag tag-red">The most frequent presenting manifestation</span>)</strong> در بیش از ۸۵٪ موارد.</span></li>
+        <li><span class="li-content">شروع ناگهانی درد شدید، تندرنس، قرمزی و تورم لاله گوش (<span class="tag tag-red">Sudden onset of pain, tenderness, and swelling</span>).</span></li>
+        <li><span class="li-content"><strong class="em3">نکته پاتوقنومونیک و کلید طلایی: عدم درگیری نرمه گوش (<span class="tag tag-green">Sparing earlobe</span>)</strong>! از آنجا که نرمه گوش فقط حاوی چربی است و بافت غضروفی ندارد، کاملاً سالم و سفید می‌ماند؛ این یافته پلی‌کندریت را از <em>سلولیت عفونی گوش</em> (که کل لاله و نرمه را قرمز می‌کند) افتراق می‌دهد.</span></li>
+        <li><span class="li-content">حملات مکرر باعث نرم‌شدن، تخریب ساختار و تغییر شکل لاله گوش (Floppy ear یا Cauliflower ear) و کاهش شنوایی (<span class="tag tag-red">Hearing loss</span>) ناشی از انسداد مجرا یا واسکولیت شریان شنوایی می‌شود.</span></li>
+      </ul>
+    </div>
+
+    <div class="grid2">
+      <div class="mini-card mc-orange">
+        <h5>۲. درگیری بینی (Nasal Involvement) (اسلاید ۸۴)</h5>
+        <ul class="list-styled orange">
+          <li><span class="li-content">احتقان، گرفتگی بینی و اپیستاکسی (خون‌دماغ) (<span class="tag tag-orange">Nasal stuffiness and epistaxis</span>).</span></li>
+          <li><span class="li-content">تخریب و نرم‌شدن غضروف تیغه بینی منجر به فرورفتگی پل بینی و <strong>دفورمیتی بینی زینی‌شکل (<span class="tag tag-red">Saddle nose deformity</span>)</strong> می‌گردد.</span></li>
+        </ul>
+      </div>
+
+      <div class="mini-card mc-purple">
+        <h5>۳. درگیری حنجره و تراشه (Laryngotracheobronchial) (اسلاید ۸۵)</h5>
+        <ul class="list-styled purple">
+          <li><span class="li-content">حساسیت و تندرنس غضروف‌های تیروئید و کریکوئید حنجره.</span></li>
+          <li><span class="li-content"><strong class="em">خطرناک‌ترین تظاهر بیماری: انسداد راه‌های هوایی (<span class="tag tag-red">Airway obstruction</span>)</strong>! به علت تخریب و نرم‌شدن حلقه‌های تراشه (Tracheomalacia)، راه هوایی هنگام دم دچار کلاپس دینامیک شده و منجر به استریدور و خفگی ناگهانی می‌گردد.</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mini-card mc-teal" style="margin-top:14px;">
+      <h5>۴. سایر تظاهرات سیستمیک (اسلایدهای ۸۵ و ۸۶)</h5>
+      <ul class="list-styled teal">
+        <li><span class="li-content"><strong>مفاصل:</strong> <strong>اولیگوآرتریت یا پلی‌آرتریت نامتقارن غیرفرسایشی (<span class="tag tag-teal">Asymmetric oligo- or polyarthritis</span>)</strong> که تخریب استخوانی ایجاد نمی‌کند.</span></li>
+        <li><span class="li-content"><strong>چشم:</strong> کونژونکتیویت، اپی‌اسکلریت، <strong>اسکلریت (<span class="tag tag-red">Scleritis</span>)</strong> (بسیار دردناک با خطر سوراخ شدن کره چشم)، ایریت و یووئیت.</span></li>
+        <li><span class="li-content"><strong>قلبی-عروقی:</strong> <strong>نارسایی دریچه‌های قلبی (<span class="tag tag-red">Cardiac valvular regurgitation</span>)</strong> ناشی از گشادی ریشه آئورت یا درگیری آنولوس دریچه‌ها، و آنوریسم آئورت.</span></li>
+        <li><span class="li-content"><strong>کلیه و عروق:</strong> گلومرولونفریت و واسکولیت سیستمیک عروق متوسط و کوچک (<span class="tag tag-purple">Vasculitis</span>).</span></li>
+      </ul>
+    </div>
+
+    <h4>۳. معیارهای تشخیصی پلی‌کندریت راجعه (اسلاید ۸۷)</h4>
+    <div class="mini-card mc-blue">
+      <h5>۶ ویژگی بالینی اصلی در معیارهای تشخیصی:</h5>
+      <div class="kv-row"><span class="kv-key">(۱) لاله گوش‌ها:</span><span class="kv-value">کندریت دوطرفه لاله گوش با حفظ لاله نرمه (<span class="tag tag-blue">Auricles</span>).</span></div>
+      <div class="kv-row"><span class="kv-key">(۲) مفاصل:</span><span class="kv-value">آرتریت غیرفرسایشی سرونگاتیو (<span class="tag tag-blue">Arthritis</span>).</span></div>
+      <div class="kv-row"><span class="kv-key">(۳) بینی:</span><span class="kv-value">کندریت غضروف تیغه بینی (<span class="tag tag-blue">Nasal cartilage</span>).</span></div>
+      <div class="kv-row"><span class="kv-key">(۴) چشم:</span><span class="kv-value">التهاب چشمی نظیر اسکلریت، اپی‌اسکلریت یا یووئیت (<span class="tag tag-blue">Ocular inflammation</span>).</span></div>
+      <div class="kv-row"><span class="kv-key">(۵) راه هوایی:</span><span class="kv-value">کندریت حنجره و غضروف‌های تراشه (<span class="tag tag-blue">Laryngeal and/or tracheal cartilages</span>).</span></div>
+      <div class="kv-row"><span class="kv-key">(۶) گوش داخلی:</span><span class="kv-value">آسیب شنوایی-تعادلی، وزوز گوش یا سرگیجه (<span class="tag tag-blue">Cochlear and/or vestibular</span>).</span></div>
+    </div>
+
+    <div class="infobox ib-green" style="margin-top:14px;">
+      <span class="ib-icon">⚖️</span>
+      <div>
+        <strong>قوانین اثبات تشخیص (اسلاید ۸۷):</strong>
+        تشخیص پلی‌کندریت راجعه با احراز یکی از سه شرط زیر قطعی می‌شود:
+        <br>• وجود <strong>۳ علامت یا بیشتر</strong> از موارد شش‌گانه فوق (<span class="tag tag-green">Three or more</span>)؛ <strong>یا</strong>
+        <br>• وجود <strong>۲ علامت یا بیشتر</strong> به شرط <strong>پاسخ مثبت بالینی به کورتیکواستروئیدها</strong> (<span class="tag tag-green">Two or more that responded to glucocorticoids</span>)؛ <strong>یا</strong>
+        <br>• وجود <strong>حداقل ۱ علامت</strong> همراه با <strong>بیوپسی مثبت و مؤید از بافت غضروفی</strong> (<span class="tag tag-green">One or more and a positive biopsy</span>).
+      </div>
+    </div>
+
+    <h4>۴. درمان پلی‌کندریت راجعه (اسلاید ۸۸)</h4>
+    <div class="grid2">
+      <div class="mini-card mc-yellow">
+        <h5>موارد خفیف و درگیری‌های لاله گوش و مفصل</h5>
+        <p>تجویز <strong>پردنیزولون خوراکی با دوز ۴۰ الی ۶۰ میلی‌گرم در روز (<span class="tag tag-yellow">Prednisolone 40-60 mg/d</span>)</strong>؛ پس از کنترل التهاب حاد، دوز دارو به آرامی تیپر و کم می‌شود. در موارد خفیف محدود به مفاصل ممکن است از NSAID، کلشیسین یا داپسون نیز استفاده گردد.</p>
+      </div>
+
+      <div class="mini-card mc-red">
+        <h5>موارد شدید و تهدیدکننده ارگان‌ها (Severe Organ Threatening)</h5>
+        <p>در صورت درگیری مجاری تنفسی (تراشه و حنجره)، اسکلریت نکروزان چشم، نارسایی آئورت، یا واسکولیت سیستمیک:</p>
+        <ul class="list-styled red" style="margin-top:6px;">
+          <li><span class="li-content">پالس متیل‌پردنیزولون وریدی با دوز بالا.</span></li>
+          <li><span class="li-content"><strong>داروهای سرکوبگر قوی سیستم ایمنی:</strong> <strong>سیکلوفسفاماید، متوترکسات، آزاتیوپرین یا سیکلوسپورین (<span class="tag tag-red">Cyclophosphamide, Methotrexate, Azathioprine, or Cyclosporine</span>)</strong>.</span></li>
+          <li><span class="li-content">در کلاپس راه‌های هوایی، مداخلات اورژانسی جراحی نظیر تراکئوستومی یا قرار دادن استنت تراکئوبرونکیال الزامی است.</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 11: COMPARATIVE SUMMARY TABLE -->
+  <div id="sec11" class="section-header sh-blue">
+    <div class="icon">📊</div>
+    <span>بخش یازدهم: جدول تطبیقی و مقایسه جامع چهار بیماری جلسه</span>
+  </div>
+
+  <div class="subsection sub-blue">
+    <h4>جدول جامع تفاوت‌های کلیدی بالینی، آزمایشگاهی، بافت‌شناسی و درمانی</h4>
+    
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>شاخص ارزیابی</th>
+            <th>بیماری بهجت (Behçet)</th>
+            <th>سندرم شوگرن (Sjögren)</th>
+            <th>بیماری مرتبط با IgG4</th>
+            <th>پلی‌کندریت راجعه (RP)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>جنسیت غالب</strong></td>
+            <td><strong>مردان اندکی بیشتر</strong> (۱.۱۴:۱)؛ اما شدت بسیار بالاتر</td>
+            <td><strong>غالبیت مطلق زنان</strong> (۱۰:۱ تا ۲۰:۱)</td>
+            <td><strong>مردان میانسال تا مسن</strong></td>
+            <td><strong>مرد و زن برابر</strong> (۱:۱)</td>
+          </tr>
+          <tr>
+            <td><strong>سن شایع شروع</strong></td>
+            <td>دهه سوم (میانگین ۲۵.۶ سالگی)</td>
+            <td>دهه ۴ تا ۶ زندگی (میانسالی)</td>
+            <td>دهه ۵ تا ۷ زندگی (مسن‌تر)</td>
+            <td>۴۰ تا ۵۰ سالگی</td>
+          </tr>
+          <tr>
+            <td><strong>پاتولوژی پایه</strong></td>
+            <td>واسکولیت نوتروفیلیک، بیش‌فعالی PMN</td>
+            <td>ارتشاح لنفوسیتی غدد، بیش‌فعالی B-cell</td>
+            <td>فیبروز استوریفرم، فلبیت انسدادی، IgG4+</td>
+            <td>التهاب و تخریب غضروف هیالن و الاستیک</td>
+          </tr>
+          <tr>
+            <td><strong>ارگان‌های هدف اصلی</strong></td>
+            <td>مخاط دهان و تناسلی، چشم، پوست، وریدها</td>
+            <td>غدد اشکی و بزاقی (سیکا)، مفاصل، ریه</td>
+            <td>پانکراس، صفرا، بزاقی، اربیت، رتروپریتوئن</td>
+            <td>لاله گوش (حفظ نرمه)، تیغه بینی، تراشه</td>
+          </tr>
+          <tr>
+            <td><strong>تظاهرات چشمی تیپیک</strong></td>
+            <td>پان‌یووئیت، رتینیت، <strong>هایپوپیون</strong></td>
+            <td>کراتوکونژونکتیویت سیکا (خراش قرنیه)</td>
+            <td>سودوتومور کاسه چشم، پروپتوز، تورم پلک</td>
+            <td><strong>اسکلریت</strong>، اپی‌اسکلریت، یووئیت</td>
+          </tr>
+          <tr>
+            <td><strong>مارکرهای آزمایشگاهی</strong></td>
+            <td>HLA-B51 مثبت؛ بدون اتوآنتی‌بادی</td>
+            <td>Anti-Ro/SSA, Anti-La/SSB, ANA, RF</td>
+            <td>افزایش IgG4 سرم (در ۳۰٪ موارد نرمال!)</td>
+            <td>افزایش شدید ESR و CRP؛ آنتی‌بادی کلاژن II</td>
+          </tr>
+          <tr>
+            <td><strong>تست تشخیصی اختصاصی</strong></td>
+            <td>تست پاترژی پوست؛ معیار rICBD ≥ ۴</td>
+            <td>بیوپسی لب (FLS ≥ 1)، شیرمر، OSS</td>
+            <td>بیوپسی بافتی با رنگ‌آمیزی IgG4</td>
+            <td>معیار ۳ علامت بالینی یا بیوپسی غضروف</td>
+          </tr>
+          <tr>
+            <td><strong>عارضه ماژور / تهدیدکننده</strong></td>
+            <td>نابینایی، پارگی آنوریسم ریوی، ترومبوز</td>
+            <td><strong>لنفوم سلول B</strong> (بالاترین ریسک)، بلوک قلبی جنین</td>
+            <td>توده‌های انسدادی، نارسایی کلیه، سیروز صفراوی</td>
+            <td><strong>کلاپس و انسداد خفه‌کننده راه هوایی</strong>، نارسایی آئورت</td>
+          </tr>
+          <tr>
+            <td><strong>پروتکل درمان اولیه</strong></td>
+            <td>کلشیسین (مخاط)، کورتون + ایمونوساپرسیو (چشم/عروق)</td>
+            <td>اشک مصنوعی، پیلوکارپین، هیدروکسی‌کلروکین</td>
+            <td><strong>کورتیکواستروئید خوراکی</strong> (پاسخ درخشان)</td>
+            <td>پردنیزولون ۴۰ الی ۶۰ میلی‌گرم در روز</td>
+          </tr>
+          <tr>
+            <td><strong>درمان موارد مقاوم/شدید</strong></td>
+            <td>مهارکننده TNF (اینفلیکسی‌مب)، سیکلوفسفاماید</td>
+            <td>ریتوکسیمب، سیکلوفسفاماید</td>
+            <td><strong>ریتوکسیمب (Rituximab)</strong></td>
+            <td>سیکلوفسفاماید، متوترکسات، استنت تراشه</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="infobox ib-yellow">
+      <span class="ib-icon">💡</span>
+      <div>
+        <strong>جمع‌بندی مرواریدهای بالینی برای امتحانات و کشیک:</strong>
+        <br>۱. زخم دهانی بدون درد <strong>هرگز بهجت نیست</strong>.
+        <br>۲. آفت تناسلی بهجت <strong>اسکار هیپوپیگمانته بر جای می‌گذارد</strong> و هرگز گلنز پنیس یا یورترا را درگیر نمی‌کند.
+        <br>۳. در مرد جوانی که با فلبیت سطحی مراجعه کرده، حتماً <strong>سونوگرافی DVT و بررسی عروقی</strong> انجام دهید.
+        <br>۴. در بیماران بهجت دچار هموپتیزی، شک به <strong>آنوریسم شریان ریوی</strong> است؛ هرگز داروی ضدانعقاد تجویز نکنید.
+        <br>۵. بزرگی بدون درد پاروتید در شوگرن که ظرف ۲-۳ هفته تحلیل نرود، زنگ خطر <strong>لنفوم MALT</strong> است.
+        <br>۶. جنین مادران شوگرن با Anti-Ro مثبت باید بین هفته‌های ۱۶ تا ۲۴ بارداری با <strong>اکوکاردیوگرافی مانیتور شوند</strong>.
+        <br>۷. سطح نرمال سرمی IgG4 <strong>ردکننده بیماری IgG4-RD نیست</strong> (در ۳۰٪ موارد نرمال است).
+        <br>۸. در تورم لاله گوش، اگر <strong>نرمه گوش سالم بود (Sparing earlobe)</strong>، به نفع پلی‌کندریت راجعه است؛ اگر نرمه هم قرمز بود، سلولیت است.
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== FOOTER ===================== -->
+  <div class="footer">
+    <p>درسنامه تعاملی روماتولوژی: بیماری بهجت، شوگرن، IgG4-RD و پلی‌کندریت راجعه</p>
+    <p style="font-size: 12px; margin-top: 6px; opacity: 0.85;">تهیه‌شده منطبق بر تدریس روماتولوژی، رفرنس‌های معتبر و اسلایدهای کلاسی دانشگاه علوم پزشکی</p>
+  </div>
+
+</div> <!-- END MAIN WRAPPER -->
+
+<!-- ===== نوار شناور ابزار چند پلتفرمی ===== -->
+<div id="highlight-panel">
+  <span>🖍️ ابزار مطالعه:</span>
+  <button class="hl-btn hl-btn-yellow" onclick="applyColorHighlight('#fff59d')" title="زرد"></button>
+  <button class="hl-btn hl-btn-green" onclick="applyColorHighlight('#c8e6c9')" title="سبز"></button>
+  <button class="hl-btn hl-btn-blue" onclick="applyColorHighlight('#bbdefb')" title="آبی"></button>
+  <button class="hl-btn hl-btn-pink" onclick="applyColorHighlight('#f8bbd0')" title="صورتی"></button>
+  <button class="panel-action-btn" onclick="addNoteAtSelection()">📝 یادداشت</button>
+  <button class="panel-action-btn" onclick="viewAllNotes()">🔍 لیست یادداشت‌ها</button>
+  <button class="panel-action-btn panel-action-btn-red" onclick="clearSelectedHighlight()">❌ پاک‌کردن</button>
+  <button class="panel-action-btn" style="background:#2e7d32;" onclick="exportModifiedHTML()">📥 خروجی گرفتن از فایل</button>
+</div>
+
+<!-- پنجره مودال ثبت/ویرایش یادداشت -->
+<div class="modal-overlay" id="note-edit-modal">
+  <div class="modal-card">
+    <h4 id="modal-title">ثبت یادداشت جدید در این محل</h4>
+    <textarea class="modal-textarea" id="modal-note-input" placeholder="نکته مهم کلاسی خود را جهت مرور سریع بنویسید..."></textarea>
+    <div class="modal-actions">
+      <button class="btn btn-primary" onclick="saveNoteChanges()">💾 ذخیره تغییرات</button>
+      <button class="btn btn-danger" id="btn-delete-note" onclick="deleteActiveNote()">❌ حذف یادداشت</button>
+      <button class="btn btn-secondary" onclick="closeNoteModal()">انصراف</button>
+    </div>
+  </div>
+</div>
+
+<!-- پنجره مودال لیست همه‌ی یادداشت‌ها -->
+<div class="modal-overlay" id="all-notes-modal">
+  <div class="modal-card" style="max-height: 80%; overflow-y: auto; max-width: 600px;">
+    <h4>📋 تمام یادداشت‌های ثبت‌شده شما</h4>
+    <div id="all-notes-list" style="margin-bottom: 20px;">
+      <!-- لیست پویا به صورت خودکار پر خواهد شد -->
+    </div>
+    <div class="modal-actions">
+      <button class="btn btn-secondary" onclick="closeAllNotesModal()">بستن پنجره</button>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== JAVASCRIPT LOGIC ===================== -->
+<script>
+  const storageStateKey = "rheumatology_behcet_sjogren_igg4_interactive_state";
+  let savedRange = null; 
+  let activeMarker = null;
+
+  document.addEventListener("DOMContentLoaded", () => {
+    loadPageState();
+  });
+
+  function savePageState() {
+    const mainHTML = document.querySelector('.main').innerHTML;
+    localStorage.setItem(storageStateKey, mainHTML);
+  }
+
+  function loadPageState() {
+    const savedHTML = localStorage.getItem(storageStateKey);
+    if (savedHTML) {
+      document.querySelector('.main').innerHTML = savedHTML;
+    }
+  }
+
+  function applyColorHighlight(colorHex) {
+    const selection = window.getSelection();
+    if (!selection.rangeCount || selection.isCollapsed) {
+      alert("لطفاً ابتدا متنی از جزوه را با ماوس یا لمس طولانی انتخاب کنید.");
+      return;
+    }
+
+    const main = document.querySelector('.main');
+    const originalEditable = main.contentEditable;
+    
+    main.contentEditable = "true";
+    
+    try {
+      document.execCommand("styleWithCSS", false, true);
+      document.execCommand("backColor", false, colorHex);
+    } catch (e) {
+      console.error("خطای هایلایت:", e);
+    }
+    
+    main.contentEditable = originalEditable;
+    selection.removeAllRanges();
+    savePageState();
+  }
+
+  function clearSelectedHighlight() {
+    applyColorHighlight('transparent');
+  }
+
+  function addNoteAtSelection() {
+    const selection = window.getSelection();
+    if (!selection.rangeCount || selection.isCollapsed) {
+      alert("لطفاً ابتدا بخشی از متن را با کشیدن انگشت یا ماوس انتخاب کنید تا یادداشت به آنجا متصل شود.");
+      return;
+    }
+
+    savedRange = selection.getRangeAt(0).cloneRange();
+    
+    activeMarker = null; 
+    document.getElementById("modal-title").innerText = "ثبت یادداشت جدید در این محل";
+    document.getElementById("modal-note-input").value = "";
+    document.getElementById("btn-delete-note").style.display = "none";
+    document.getElementById("note-edit-modal").style.display = "flex";
+  }
+
+  function saveNoteChanges() {
+    const text = document.getElementById("modal-note-input").value.trim();
+    if (!text) {
+      alert("لطفاً متن یادداشت را وارد کنید.");
+      return;
+    }
+
+    if (activeMarker === null) {
+      if (savedRange) {
+        const marker = document.createElement("span");
+        marker.className = "note-marker";
+        marker.setAttribute("data-note", text);
+        marker.innerHTML = `📝<span class="note-tooltip">${escapeHTML(text)}</span>`;
+        marker.contentEditable = "false";
+        
+        try {
+          savedRange.collapse(false);
+          savedRange.insertNode(marker);
+        } catch (e) {
+          console.error("Error inserting marker:", e);
+          alert("امکان درج یادداشت در این بخش به دلیل تداخل تگ‌ها وجود ندارد. لطفا متن ساده‌تری را انتخاب کنید.");
+        }
+        savedRange = null;
+      } else {
+        alert("محدوده متن انتخاب شده معتبر نیست. لطفاً مجدداً متن را انتخاب کنید.");
+        return;
+      }
+    } else {
+      activeMarker.setAttribute("data-note", text);
+      activeMarker.innerHTML = `📝<span class="note-tooltip">${escapeHTML(text)}</span>`;
+    }
+
+    closeNoteModal();
+    savePageState();
+  }
+
+  function deleteActiveNote() {
+    if (activeMarker && confirm("آیا مایل به حذف این یادداشت هستید؟")) {
+      activeMarker.remove();
+      closeNoteModal();
+      savePageState();
+    }
+  }
+
+  function closeNoteModal() {
+    document.getElementById("note-edit-modal").style.display = "none";
+    activeMarker = null;
+    savedRange = null;
+  }
+
+  document.addEventListener("click", (e) => {
+    if (e.target.classList.contains("note-marker")) {
+      activeMarker = e.target;
+      const savedText = activeMarker.getAttribute("data-note") || "";
+      document.getElementById("modal-title").innerText = "مشاهده و ویرایش یادداشت";
+      document.getElementById("modal-note-input").value = savedText;
+      document.getElementById("btn-delete-note").style.display = "inline-block";
+      document.getElementById("note-edit-modal").style.display = "flex";
+    }
+  });
+
+  function viewAllNotes() {
+    const markers = document.querySelectorAll(".note-marker");
+    const listContainer = document.getElementById("all-notes-list");
+    listContainer.innerHTML = "";
+
+    if (markers.length === 0) {
+      listContainer.innerHTML = '<p style="text-align:center; color:var(--muted); font-size:14px; padding:20px 0;">هیچ یادداشتی در کل متن ثبت نشده است.</p>';
+      document.getElementById("all-notes-modal").style.display = "flex";
+      return;
+    }
+
+    markers.forEach((marker, index) => {
+      const noteText = marker.getAttribute("data-note") || "";
+      const context = marker.previousSibling ? marker.previousSibling.textContent.slice(-35) : "...";
+      
+      const card = document.createElement("div");
+      card.className = "mini-card mc-blue";
+      card.style.marginBottom = "12px";
+      card.innerHTML = `
+        <div style="font-size:11px; color:var(--muted); margin-bottom:5px;">یادداشت شماره ${index + 1} (متن مجاور: "...${escapeHTML(context)}")</div>
+        <div style="font-weight:bold; font-size:14px; line-height:1.6; white-space:pre-wrap; color:var(--text);">${escapeHTML(noteText)}</div>
+        <div style="margin-top:10px; display:flex; gap:8px;">
+          <button onclick="scrollToMarker(${index})" class="tag tag-blue" style="border:none; cursor:pointer; padding:4px 10px;">🔍 پرش به محل یادداشت</button>
+          <button onclick="deleteMarkerFromList(${index})" class="tag tag-red" style="border:none; cursor:pointer; padding:4px 10px;">❌ حذف</button>
+        </div>
+      `;
+      listContainer.appendChild(card);
+    });
+
+    document.getElementById("all-notes-modal").style.display = "flex";
+  }
+
+  window.scrollToMarker = function(index) {
+    const markers = document.querySelectorAll(".note-marker");
+    if (markers[index]) {
+      closeAllNotesModal();
+      markers[index].scrollIntoView({ behavior: "smooth", block: "center" });
+      
+      const originalBg = markers[index].style.backgroundColor;
+      markers[index].style.backgroundColor = "#ff5252";
+      markers[index].style.transform = "scale(1.4)";
+      
+      setTimeout(() => {
+        markers[index].style.backgroundColor = originalBg;
+        markers[index].style.transform = "scale(1)";
+      }, 1500);
+    }
+  };
+
+  window.deleteMarkerFromList = function(index) {
+    if (confirm("آیا مایل به حذف این یادداشت هستید؟")) {
+      const markers = document.querySelectorAll(".note-marker");
+      if (markers[index]) {
+        markers[index].remove();
+        savePageState();
+        viewAllNotes(); 
+      }
+    }
+  };
+
+  function exportModifiedHTML() {
+    const docClone = document.cloneNode(true);
+    const currentMainHTML = document.querySelector('.main').innerHTML;
+    docClone.querySelector('.main').innerHTML = currentMainHTML;
+    
+    const htmlString = '<!DOCTYPE html>\n' + docClone.documentElement.outerHTML;
+    
+    const blob = new Blob([htmlString], { type: "text/html;charset=utf-8" });
+    const link = document.createElement("a");
+    link.href = URL.createObjectURL(blob);
+    link.download = "rheumatology_behcet_sjogren_igg4_polychondritis_complete.html";
+    link.click();
+  }
+
+  function closeAllNotesModal() {
+    document.getElementById("all-notes-modal").style.display = "none";
+  }
+
+  function escapeHTML(str) {
+    return str.replace(/[&<>'"]/g, 
+      tag => ({
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        "'": '&#39;',
+        '"': '&quot;'
+      }[tag] || tag)
+    );
+  }
+</script>
+
+</body>
+</html>
